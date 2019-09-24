@@ -1,0 +1,22 @@
+/* Reset Default Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Default 20pixels to 1ine-height */
+html {
+    font: 20px/1 sans-serif;
+}
+
+/* .wrapper div styling
+    rem - relative 'em' units;
+    30rem = 30*20=600px max width (font: 20px);
+    margin: 0 top/bottom auto width;
+    width: 90% of width of viewport;   
+*/
+.wrapper {
+    width: 0 auto;
+    max-width: 30rem;
+    width: 90%;
+}
