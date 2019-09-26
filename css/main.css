@@ -8,28 +8,60 @@
 html {
     font: 20px/1 sans-serif;
 
-    --blockColor: rgba(53, 34, 219, 0.514);
+    --block-color: rgba(53, 34, 219, 0.514);
+    --block-color-2: rgba(75, 57, 233, 0.514);
+    --mainFont: rgba(215, 221, 191, 0.514);
 }
 
-main {
-    grid-area: "Main";
+.footer {
+    grid-area: Footer;
+}
+
+.header {
+    /* background-color: (var(--blockColor)); */
+    background-image: repeating-radial-gradient(var(--block-color), var(--block-color-2), var(--mainFont));
+    grid-area: Header;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.header__img {
+    border-radius: 50%;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+
+.header__title {
+    color: var(--mainFont);
+}
+
+.header__subtitle {
+    color: var(--mainFont);
+    font-style: italic;
+}
+
+.main {
+    grid-area: Main;
     align-content: center;
 }
 
 .sidebar {
-    grid-area: "Main";
+    grid-area: Sidebar;
 }
 
 .sidebar-list {
-    color: var(--blockColor)
+    color: var(--block-color);
+    list-style: none;
 }
 
 .sidebar-list__item {
-    
     background-color: rgba(27, 13, 150, 0.596);
     color: whitesmoke;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding: .5rem;
 }
 
 /*  wrapper Class div styling
@@ -40,12 +72,15 @@ main {
 */
 .wrapper {
     display: grid;
-    min-height: 100vh;
-    grid-area: "Header Header Header"
-               "Sidebar Main Sidebar"
-               "Footer Footer Footer";
+    grid-template-areas: "Header Header Header"
+                         "Sidebar Main Main"
+                         "Footer Footer Footer";
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 10rem 2fr 1fr;
     gap: 2rem;
+    min-height: 100vh;
+    max-width: 45rem;
+    margin: 0 auto;
+    width: 90%;
 }
 
