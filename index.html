@@ -9,34 +9,36 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="main-header">
-            <img class="main-header__img" src="https://placekitten.com/200/200">
-            <header class="main-header">
-                <h1 class="main-header__title">Brad Wilson</h1>
-                <br><br>
-                <h3 class="main-header__subtitle">Projects and me</h3>
-            </header>
-        </div>
-        <nav class="navigator">
-            <ul class="navigator-list">
-                <li class="navigator-list__item">About Me</li>
-                <li class="navigator-list__item">My Projects</li>
-                <li class="navigator-list__item">Contact Me</li>
-                <li class="navigator-list__item">My Experiences</li>
+
+        <header class="header">
+            <img class="header__img" src="https://placekitten.com/200/200">
+            <h1 class="header__title">Brad Wilson</h1>
+            <h3 class="header__subtitle">Projects and me</h3>
+        </header>
+
+        <nav class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-list__item">About Me</li>
+                <li class="sidebar-list__item">My Projects</li>
+                <li class="sidebar-list__item">Contact Me</li>
+                <li class="sidebar-list__item">My Experiences</li>
             </ul>
         </nav>
-        <main>
-            <section>
+
+        <main class="main">
+
+            <section class="main__About">
                 <h2>About Me</h2>
                 <p>I'm a technology enthusiest on the surface and at heart, who enjoys solving problems and working on projects.</p>
             </section>
-            <section>
+
+            <section class="main__Projects">
                 <h2>My Projects</h2>
                 <p>
                     Below is a table of my projects along with a link and short description. Feel free to reach out to me via <a>Contacts</a>, 
                     or feel free to create a Git issue! 
                 </p>
-                <table class="main-table">
+                <table class="main__table">
                     <tr>
                         <th><h4>Project Name</h4></th>
                         <th><h4>Description</h4></th>
@@ -63,7 +65,8 @@
                     </tr>
                 </table>
             </section>
-            <section>
+
+            <section class="Contacts">
                 <h2>Contact Me</h2>
                 <h4>All values below are temporary</h3>
                 <ul>
@@ -73,7 +76,8 @@
                     <li></li>
                 </ul>
             </section>
-            <section>
+
+            <section class="Experiences">
                 <h2>My Experiences</h2>
             </section>
         </main>
