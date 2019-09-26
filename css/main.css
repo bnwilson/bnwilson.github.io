@@ -11,10 +11,19 @@ html {
     --block-color: rgba(53, 34, 219, 0.514);
     --block-color-2: rgba(75, 57, 233, 0.514);
     --mainFont: rgba(215, 221, 191, 0.514);
+    --mainFont-2: rgba(47, 143, 122, 0.692);
+    --section-titles: #006494;
+    --section-subtitles: rgb(78, 122, 204);
+    --section-text-blue: rgb(36, 81, 165);
+    --section-text-slate: rgb(71, 80, 88);
 }
 
 .footer {
     grid-area: Footer;
+    align-self: center;
+    justify-self: center;
+    color: var(--section-text-slate);
+    opacity: .8;
 }
 
 .header {
@@ -25,7 +34,7 @@ html {
     align-self: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 90%;
 }
 
@@ -36,17 +45,59 @@ html {
 }
 
 .header__title {
-    color: var(--mainFont);
+    align-self: center;
+}
+
+.header__main-title {
+    color: var(--mainFont-2);
 }
 
 .header__subtitle {
     color: var(--mainFont);
+    padding: 1em;
     font-style: italic;
 }
 
 .main {
     grid-area: Main;
     align-content: center;
+}
+
+.main__body {
+    padding: 1em 1em 0 1em;
+}
+
+.main__body-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.main__body-table th {
+    color: var(--section-subtitles);
+    font: bold;
+    padding-bottom: .5em;
+}
+
+.main__body-table td {
+    color: var(--section-text-slate)
+}
+
+.main__section-item {
+    padding: 1.5em .5em;
+}
+
+.main__section-title {
+    color: var(--section-titles);
+}
+
+.main__section-subtitle {
+    color: var(--section-subtitles);
+    padding-top: 1em;
+}
+
+.main__text {
+    color: var(--section-text-slate);
 }
 
 .sidebar {
@@ -79,7 +130,7 @@ html {
     grid-template-rows: 10rem 2fr 1fr;
     gap: 2rem;
     min-height: 100vh;
-    max-width: 45rem;
+    max-width: 55rem;
     margin: 0 auto;
     width: 90%;
 }
