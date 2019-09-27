@@ -4,16 +4,26 @@
     margin: 0;
     padding: 0;
 }
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lora|Noto+Sans+TC|Open+Sans&display=swap');
+/* 
+font-family: 'Lora', serif;
+font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Open Sans', sans-serif; 
+*/
+
 /* Default 20pixels to 1ine-height */
 html {
-    font: 20px/1 sans-serif;
+    
+    font: 20px/1 'Lora';
 
-    --block-color: rgba(53, 34, 219, 0.514);
+    --block-color: rgba(27, 12, 161, 0.795);
     --block-color-2: rgba(75, 57, 233, 0.514);
+    --block-font: rgba(213, 210, 243, 0.918);
     --mainFont: rgba(215, 221, 191, 0.514);
     --mainFont-2: rgba(47, 143, 122, 0.692);
     --section-titles: #006494;
-    --section-subtitles: rgb(78, 122, 204);
+    --section-subtitles: rgba(120, 153, 214, 0.918);
     --section-text-blue: rgb(36, 81, 165);
     --section-text-slate: rgb(71, 80, 88);
 }
@@ -71,16 +81,32 @@ html {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
+    border: .2em solid var(--block-color-2);
+    font-family: 'Noto Sans TC';
+}
+
+.main__body-table-caption {
+    padding: .2em .5em;
+    color: var(--section-subtitles);
+}
+
+.main__body-table-thead {
+    background-color: var(--block-color);
+    color: var(--block-font);
+    border-bottom: .2em solid var(--block-color-2);
+    padding-top: 1em;
 }
 
 .main__body-table th {
-    color: var(--section-subtitles);
     font: bold;
-    padding-bottom: .5em;
 }
 
 .main__body-table td {
-    color: var(--section-text-slate)
+    color: var(--section-text-slate);
+    padding: .5em;
+}
+.main__body-table tr td:first-child {
+    font-weight: bold;
 }
 
 .main__section-item {
