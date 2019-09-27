@@ -22,6 +22,7 @@ html {
     --block-color-3: rgba(215, 221, 191, 0.514);
     --block-color-light: rgba(164, 221, 216, 0.514);
     --block-color-light-2: rgba(211, 240, 237, 0.507);
+    --block-color-light-3: rgba(106, 152, 189, 0.507);
     --block-font: rgba(213, 210, 243, 0.918);
     --block-shadow: rgba(27, 12, 161, 0.33);
     --mainFont: rgba(12, 17, 83, 0.753);
@@ -175,6 +176,10 @@ html {
     padding: 1rem;
     border: .1rem solid var(--block-color-2);
     margin: .5rem .5rem;
+}
+
+.sidebar-list__item:hover {
+    background-image: linear-gradient(var(--block-color-light-2), var(--block-color-light-3));
 }
 
 /*  wrapper Class div styling
