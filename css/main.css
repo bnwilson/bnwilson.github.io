@@ -25,6 +25,9 @@ html {
     --block-color-light-3: rgba(106, 152, 189, 0.507);
     --block-font: rgba(213, 210, 243, 0.918);
     --block-shadow: rgba(27, 12, 161, 0.33);
+    --list-block-color: rgba(40, 79, 253, 0.377);
+    --list-block-color-2: rgba(220, 210, 255, 0.658);
+    --list-font-color: rgba(120, 153, 214, 0.918);
     --mainFont: rgba(12, 17, 83, 0.753);
     --mainFont-2: rgba(47, 143, 122, 0.692);
     --section-titles: #006494;
@@ -43,7 +46,7 @@ html {
 
 .header {
     /* background-color: (var(--blockColor)); */
-    background-image: repeating-radial-gradient(var(--block-color), var(--block-color-2), var(--mainFont));
+    background-image: repeating-radial-gradient(var(--block-color-light), var(--block-color-light), var(--mainFont));
     grid-area: Header;
     display: flex;
     align-self: center;
@@ -88,16 +91,22 @@ html {
     margin: 1rem 1rem 2rem 1rem;
 }
 
+.main__body-about-list {
+    background-image: linear-gradient(var(--list-block-color), var(--list-block-color-2));
+    border: .3em groove var(--block-color);
+    padding: 1rem 3rem;
+}
+
 .main__body-about-lists lh {
     color: var(--mainFont);
-    font-size: 1.2rem;
-    text-align: left;
+    font-size: 1.45rem;
+    text-align: center;
     margin: 1em 0;
     line-height: 2em;
 }
 
 .main__body-about-lists li {
-    color: var(--mainFont-2);
+    color: var(--var(--list-font-color));
     margin: 1rem 0;
     font-size: 1rem;
     list-style-type: none;
