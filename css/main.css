@@ -19,8 +19,12 @@ html {
 
     --block-color: rgba(27, 12, 161, 0.795);
     --block-color-2: rgba(75, 57, 233, 0.514);
+    --block-color-3: rgba(215, 221, 191, 0.514);
+    --block-color-light: rgba(164, 221, 216, 0.514);
+    --block-color-light-2: rgba(211, 240, 237, 0.507);
     --block-font: rgba(213, 210, 243, 0.918);
-    --mainFont: rgba(215, 221, 191, 0.514);
+    --block-shadow: rgba(27, 12, 161, 0.33);
+    --mainFont: rgba(12, 17, 83, 0.753);
     --mainFont-2: rgba(47, 143, 122, 0.692);
     --section-titles: #006494;
     --section-subtitles: rgba(120, 153, 214, 0.918);
@@ -54,18 +58,18 @@ html {
     overflow: hidden;
 }
 
+.header__subtitle {
+    color: var(--mainFont);
+    padding: 1em;
+    font-style: italic;
+}
+
 .header__title {
     align-self: center;
 }
 
 .header__main-title {
     color: var(--mainFont-2);
-}
-
-.header__subtitle {
-    color: var(--mainFont);
-    padding: 1em;
-    font-style: italic;
 }
 
 .main {
@@ -75,6 +79,27 @@ html {
 
 .main__body {
     padding: 1em 1em 0 1em;
+}
+
+.main__body-about-lists {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.main__body-about-lists lh {
+    color: var(--mainFont);
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 1em 0;
+    line-height: 2em;
+}
+
+.main__body-about-lists li {
+    color: var(--mainFont-2);
+    margin: 1rem 0;
+    font-size: 1rem;
+    list-style-type: none;
 }
 
 .main__body-table {
@@ -87,7 +112,7 @@ html {
 
 .main__body-table-caption {
     padding: .2em .5em;
-    color: var(--section-subtitles);
+    text-align: left;
 }
 
 .main__body-table-thead {
@@ -109,12 +134,21 @@ html {
     font-weight: bold;
 }
 
+.main__body-table tr td:last-child {
+    text-align: center;
+}
+
 .main__section-item {
     padding: 1.5em .5em;
 }
 
 .main__section-title {
     color: var(--section-titles);
+    background-image: linear-gradient(var(--block-color-light), var(--block-color-light-2));
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: .2rem .2rem var(--block-shadow);
+    border: .1rem solid var(--block-color-2);
 }
 
 .main__section-subtitle {
@@ -136,9 +170,11 @@ html {
 }
 
 .sidebar-list__item {
-    background-color: rgba(27, 13, 150, 0.596);
-    color: whitesmoke;
-    padding: .5rem;
+    color: var(--section-titles);
+    background-image: linear-gradient(var(--block-color-light), var(--block-color-light-2));
+    padding: 1rem;
+    border: .1rem solid var(--block-color-2);
+    margin: .5rem .5rem;
 }
 
 /*  wrapper Class div styling

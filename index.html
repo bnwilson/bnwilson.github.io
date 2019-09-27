@@ -7,9 +7,25 @@
     <title>Brad's Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+<!-- <script>
+    Random Brad attribute functions
+    var avgSkillsArr = ['bowler', 'golfer', 'guitarist', 'drummer', 'gamer'];
+    var awesomeSkillsArr = ['coder', 'learner', 'co-worker', 'friend', 'employee'];
+
+    function getRandomAvg () {
+        var randomRoll = Math.floor(Math.random()*avgSkillsArr.length);
+        var val = "Average " + avgSkillsArr[randomRoll];
+        document.getElementById('avgSkills').after(val);
+    }
+    function getRandomAwesome () {
+        var randomRoll = Math.floor(Math.random()*awesomeSkillsArr.length);
+        var val = "Awesome " + awesomeSkillsArr[randomRoll];
+        document.getElementById('aweSkills').after(val);
+    }
+</script> -->
 <body>
     <div class="wrapper">
-
+        <!-- Header -->
         <header class="header">
             <img class="header__img" src="https://placekitten.com/200/200">
             <div class="header__title">
@@ -19,29 +35,55 @@
             
         </header>
 
+        <!-- Sidebar Menu -->
         <nav class="sidebar">
             <ul class="sidebar-list">
-                <li class="sidebar-list__item">About Me</li>
-                <li class="sidebar-list__item">My Projects</li>
-                <li class="sidebar-list__item">Contact Me</li>
-                <li class="sidebar-list__item">My Experiences</li>
+                <li class="sidebar-list__item"><a href="#About">About Me</a></li>
+                <li class="sidebar-list__item"><a href="#Projects">My Projects</a></li>
+                <li class="sidebar-list__item"><a href="#Contact">Contact Me</a></li>
+                <li class="sidebar-list__item"><a href="#Experience">My Experiences</a></li>
             </ul>
         </nav>
 
         <main class="main">
 
+            <!-- About Me -->
             <section class="main__section-item">
-                <h2 class="main__section-title">About Me</h2>
+                <h2 id="About" class="main__section-title">About Me</h2>
                 <div class="main__body">
+                    <p class="main__section-subtitle">Brad Wilson is an:<br><br></p></p>
+                    <div class="main__body-about-lists">
+                        <ul class="main__body-list-one">
+                            <lh>Average...</lh>
+                            <li>Golfer</li>
+                            <li>Bowler</li>
+                            <li>Gamer</li>
+                            <li>Guitar Player</li>
+                            <li>Tinker</li>
+                        </ul>
+                        <ul class="main__body-list-two">
+                            <lh>Awesome...</lh>
+                            <li>Full-stack Javascript Developer</li>
+                            <li>Agile and Scrum practitioner</li>
+                            <li>Pair-Program Partner</li>
+                            <li>Co-worker</li>
+                            <li>Employee</li>
+                            <li>Friend</li>
+                            <li>OAS Follower</li>
+                            <li>Ping-Pong / Table Tennis-er</li>
+                        </ul>
+                    </div>
                     <p class="main__text">
                         Self-educating, quick-learning and motivated individual, with over 6-years’ experience in assisting customers with IT solutions.
-                        <br><br>I'm a technology enthusiest on the surface and at heart, who enjoys solving problems and working on projects.  
+                        <br><br>
+                        I'm a technology enthusiest on the surface and at heart, who enjoys solving problems and working on projects.  
                     </p>
                 </div>
             </section>
 
+            <!-- My Projects -->
             <section class="main__section-item">
-                <h2 class="main__section-title">My Projects</h2>
+                <h2 id="Projects" class="main__section-title">My Projects</h2>
                 <div class="main__body">
                     <table class="main__body-table">
                         <caption class="main__body-table-caption">My collection of publically-shared projects. Feel free to reach out to me with any questions, or raise a Github issue!<br><br></caption>
@@ -61,21 +103,13 @@
                         </tr>
                         <tr>
                             <td>Fortune Teller</a></td>
-                            <td>Project1 Details</td>
+                            <td>Answer a series of questions and get your fortune read! The results are not always crystal clear.</td>
                             <td>NodeJS, Javascript (ES6), readline-sync</td>
                             <td><a href="https://github.com/bnwilson/projects/tree/master/fortune-teller">Github Link</a></td>
                         </tr>
                         <tr>
                             <td>Guessing Game</td>
-                            <td>
-                                <ul>
-                                    <li>You get 3 tries to guess a number 1-10</li>
-                                    <li>If you don't guess in 3 then you lose!</li> 
-                                    <li>The game will give you hints if you are close or far from the right answer.</li> 
-                                    <li>Good luck!</li>
-                                </ul>
-                            </td>
-                                    
+                            <td>You get 3 tries to guess a number 1-10, if you don't guess the correct number in 3 tries you lose!</td>
                             <td>NodeJS, Javascript (ES6), readline-sync</td>
                             <td><a href="https://github.com/bnwilson/projects/tree/master/guessing-game">Github Link</a></td>
                         </tr>
@@ -91,12 +125,13 @@
                 </div>
             </section>
             
+            <!-- My Experiences -->
             <section class="main__section-item">
-                <h2 class="main__section-title">My Experiences</h2>
+                <h2 id="Experience" class="main__section-title">My Experiences</h2>
             </section>
 
             <section class="main__section-item">
-                <h2 class="main__section-title">Contact Me</h2>
+                <h2 id="Contact" class="main__section-title">Contact Me</h2>
                 <h4 class="main__section-subtitle">All values below are temporary</h3>
                 <div class="main__body">
                     <ul>
@@ -108,10 +143,11 @@
                 </div>
             </section>
 
-
         </main>
+
+        <!-- Footer -->
         <footer class="footer"> 
-            Brad Wilson 2019 &copy;
+            Brad Wilson 2019 &copy; 
         </footer>
     </div>
 
