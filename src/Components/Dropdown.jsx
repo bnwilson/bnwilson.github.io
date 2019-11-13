@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/styles.css';
+import MainContent from './MainContent';
 
 class Dropdown extends React.Component {
     constructor() {
@@ -25,6 +26,8 @@ class Dropdown extends React.Component {
         });
     };
 
+   
+
     render() {
         return (
             <div 
@@ -39,10 +42,10 @@ class Dropdown extends React.Component {
                 </div>
                 { this.state.displayMenu ? (
                     <ul>
-                        <li><a className="active" href="/about">About Me</a></li>
-                        <li><a className="active" href="/projects">My Projects</a></li>
-                        <li><a className="active" href="/contact">Contact Me</a></li>
-                        <li><a className="active" href="/experience">My Experience</a></li>
+                        <li><a className="active" onClick={handleClick} value="about" href="/about" >About Me</a></li>
+                        <li><a className="active" onClick={handleClick} value="projects" href="/" >My Projects</a></li>
+                        <li><a className="active" onClick={handleClick} value="contact" href="/contact">Contact Me</a></li>
+                        <li><a className="active" onClick={handleClick} value="experience" href="/experience">My Experience</a></li>
                     </ul>
                 ):
                 (
@@ -52,6 +55,10 @@ class Dropdown extends React.Component {
             </div>
         )
     }
+}
+
+const handleClick = event => {
+    MainContent({key: event.target.value}) 
 }
 
 export default Dropdown;

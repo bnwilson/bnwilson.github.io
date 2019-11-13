@@ -78,3 +78,20 @@
     right:6px;
     top:18px;
 }
+
+.main__content__about-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr auto;
+    gap: 3rem;
+    grid-auto-flow: row;
+}
+
+.main__content__about-box-list {
+    list-style: none;
+    padding: .5rem .2rem;
+}
+
+.main__content__about-box-list__subtitle {
+    text-align: center;
+}
