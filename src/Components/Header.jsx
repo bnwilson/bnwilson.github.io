@@ -3,12 +3,12 @@ import Image from '../img/brad_professional.gif';
 import Nav from './Nav';
 import '../styles/styles.css';
 
-function Header() {
+function Header({navCallback}) {
     return (
         <header className="header">
             <Logo />
             <Title />
-            <Nav />
+            <Nav navCallback={navCallback} />
         </header>
     )   
 }

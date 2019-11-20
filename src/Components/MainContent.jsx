@@ -5,7 +5,7 @@ import Contact from './Contact';
 import Projects from './Projects';
 import Experience from './Experience';
 
-const Title = (title) => {
+const Title = ({title}) => {
     return (
         <h1 className="main__content-title">
             {title}
@@ -13,25 +13,23 @@ const Title = (title) => {
     )
 }
 
-const MainContent = (props) => {
-    const appContent = {
-        "about": About,
-        "contact": Contact,
-        "projects": Projects,
-        "experience": Experience
-
-    }
-    const [content, renderContent] = useState('About'); 
-        
+const MainContent = ({mainTitle, appContentKey}) => {
+    const [content, renderContent] = useState(''); 
+    
     useEffect(() => {
-        console.log(content);
-        return appContent[props.key]
-    })
+        let apps =  {
+            "about": About,
+            "contact": Contact,
+            "projects": Projects,
+            "experience": Experience
+        }
+        renderContent(apps[appContentKey])
+    }, [appContentKey])
     
     return (
         <div className="main__content">
-            <Title title={props.title} />
-            {renderContent}
+            <Title title={mainTitle} />
+            {content}
         </div>
     )
 }

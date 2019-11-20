@@ -1,11 +1,12 @@
 import React from 'react';
 import Dropdown from './Dropdown';
 
-function Nav() {
+function Nav({navCallback}) {
+    console.log(navCallback);
 
     return (
         <nav className="header__navbar">
-            <Dropdown />
+            <Dropdown navCallback={navCallback} />
         </nav>
     )
 }

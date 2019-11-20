@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styles/styles.css';
-import MainContent from './MainContent';
+// import MainContent from './MainContent';
 
 class Dropdown extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        console.log(props)
 
         this.state = {
             displayMenu: false
@@ -42,10 +43,34 @@ class Dropdown extends React.Component {
                 </div>
                 { this.state.displayMenu ? (
                     <ul>
-                        <li><a className="active" onClick={handleClick} value="about" href="/about" >About Me</a></li>
-                        <li><a className="active" onClick={handleClick} value="projects" href="/" >My Projects</a></li>
-                        <li><a className="active" onClick={handleClick} value="contact" href="/contact">Contact Me</a></li>
-                        <li><a className="active" onClick={handleClick} value="experience" href="/experience">My Experience</a></li>
+                        <li>
+                            <a className="active" 
+                               onClick={this.props.navCallback} 
+                               value="about" 
+                               href="/about" >About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a className="active" 
+                               onClick={this.props.navCallback} 
+                               value="projects" 
+                               href="/" >My Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a className="active" 
+                               onClick={this.props.navCallback} 
+                               value="contact" 
+                               href="/contact">Contact Me
+                            </a>
+                        </li>
+                        <li>
+                            <a className="active" 
+                               onClick={this.props.navCallback} 
+                               value="experience" 
+                               href="/experience">My Experience
+                            </a>
+                        </li>
                     </ul>
                 ):
                 (
@@ -57,8 +82,8 @@ class Dropdown extends React.Component {
     }
 }
 
-const handleClick = event => {
-    MainContent({key: event.target.value}) 
-}
+// const handleClick = event => {
+//     MainContent({key: event.target.value}) 
+// }
 
 export default Dropdown;
