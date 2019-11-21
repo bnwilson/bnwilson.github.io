@@ -1,25 +1,35 @@
 import React, {useState} from 'react';
 import './App.css';
-import Header from './Components/Header';
+import {Header, Logo, Title} from './Components/Header';
+import Nav from './Components/Nav';
 import MainContent from './Components/MainContent';
+import Dropdown from './Components/Dropdown';
+
 
 
 
 function App() {
   const [main, setMain] = useState("about")
 
+  const mainHeader = (
+    <Header>
+      <Logo />
+      <Title />
+      <Nav>
+        <Dropdown navCallback={handleNavClick}/>
+      </Nav>
+    </Header>
+  )   
+
   function handleNavClick (event) {
     event.preventDefault();
     let mainContentKey = event.currentTarget.getAttribute('value');
-    console.log(mainContentKey)
-    // let mainContentKey = event.target.value;
     setMain(mainContentKey);
-
   }
 
   return (
     <div>
-      <Header navCallback={handleNavClick} />
+      {mainHeader}
       <MainContent mainTitle="Bradley" appContentKey={main} />
     </div>
   );

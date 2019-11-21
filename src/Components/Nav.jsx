@@ -1,12 +1,22 @@
 import React from 'react';
 import Dropdown from './Dropdown';
 
-function Nav({navCallback}) {
+function StaticNav({navCallback}) {
     console.log(navCallback);
 
     return (
         <nav className="header__navbar">
             <Dropdown navCallback={navCallback} />
+        </nav>
+    )
+}
+
+function Nav(props) {
+    
+
+    return (
+        <nav className="header__navbar">
+            {props.children}
         </nav>
     )
 }

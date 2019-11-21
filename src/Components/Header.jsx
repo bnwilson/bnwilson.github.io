@@ -3,7 +3,8 @@ import Image from '../img/brad_professional.gif';
 import Nav from './Nav';
 import '../styles/styles.css';
 
-function Header({navCallback}) {
+// Not used, passing props.children to Header Component from App, instead
+export function StaticHeader({navCallback}) {
     return (
         <header className="header">
             <Logo />
@@ -13,7 +14,15 @@ function Header({navCallback}) {
     )   
 }
 
-function Logo() {
+export function Header(props) {
+    return (
+        <header className="header">
+            {props.children}
+        </header>
+    )   
+}
+
+export function Logo() {
     return (
         <a
             className="header__image"
@@ -24,7 +33,7 @@ function Logo() {
     )
 }
 
-function Title() {
+export function Title() {
     return (
         <h1 className="header__title">
             Brad Wilson's Portfolio
@@ -32,4 +41,4 @@ function Title() {
     )
 }
 
-export default Header;
+// export default Header;

@@ -13,25 +13,34 @@ const Title = ({title}) => {
     )
 }
 
-const MainContent = ({mainTitle, appContentKey}) => {
-    const [content, renderContent] = useState(''); 
+const MainContent = ({appContentKey}) => {
+    const [content, setData] = useState('');
     
     useEffect(() => {
+
         let apps =  {
-            "about": About,
-            "contact": Contact,
-            "projects": Projects,
-            "experience": Experience
+            "about": (<About> <Title title="A Little About Me"/></About>),
+            "contact": (<Contact> <Title title="Contact Information"/></Contact>),
+            "projects": (<Projects> <Title title="My Projects"/></Projects>),
+            "experience": (<Experience> <Title title="My Experience"/></Experience>)
         }
-        renderContent(apps[appContentKey])
+        setData(apps[appContentKey])
     }, [appContentKey])
     
     return (
         <div className="main__content">
-            <Title title={mainTitle} />
             {content}
         </div>
     )
 }
 
 export default MainContent;
+
+// let apps =  {
+//     "about": (<About> <Title title="A Little About Me"/></About>),
+//     "about": [About, "A Little About Me"],
+
+//     "contact": [Contact, "Contact Information"],
+//     "projects": [Projects, "My Projects"],
+//     "experience": [Experience, "My Experience"]
+// }

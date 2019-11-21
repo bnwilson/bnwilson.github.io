@@ -9,8 +9,11 @@ html {
 
   /* Dropdown */
   --box-shadow: rgba(0,0,0,0.2);
+  --button-color-hover: #c01f1f;
+  --button-color: #ee0e0e;
+  --header-color: rgb(26, 89, 109);
+  --header-color-shadow: rgb(11, 55, 68);
   --off-white: #e5e5e5;
-  --button-color: #ff3232;
 }
 
 body {
