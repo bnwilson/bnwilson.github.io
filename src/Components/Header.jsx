@@ -1,18 +1,8 @@
 import React from 'react';
 import Image from '../img/brad_professional.gif';
-import Nav from './Nav';
 import '../styles/styles.css';
 
 // Not used, passing props.children to Header Component from App, instead
-export function StaticHeader({navCallback}) {
-    return (
-        <header className="header">
-            <Logo />
-            <Title />
-            <Nav navCallback={navCallback} />
-        </header>
-    )   
-}
 
 export function Header(props) {
     return (
@@ -40,5 +30,3 @@ export function Title() {
         </h1>
     )
 }
-
-// export default Header;

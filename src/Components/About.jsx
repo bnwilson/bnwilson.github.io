@@ -3,7 +3,7 @@ import '../styles/styles.css';
 
 const About = (props) => {
     return (
-        <div class="main__content-wrapper">
+        <div className="main__content-wrapper">
             {props.children}
             <span className="main__content__about-box">
                 <ul className="main__content__about-box-list">

@@ -13,11 +13,8 @@ function App() {
 
   const mainHeader = (
     <Header>
-      <Logo />
       <Title />
-      <Nav>
-        <Dropdown navCallback={handleNavClick}/>
-      </Nav>
+      <Nav props={handleNavClick} />
     </Header>
   )   
 

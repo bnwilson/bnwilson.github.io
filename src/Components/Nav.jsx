@@ -1,55 +1,46 @@
 import React from 'react';
-import Dropdown from './Dropdown';
 
-function StaticNav({navCallback}) {
-    console.log(navCallback);
+
+function Nav({props}) {
+    let navContent = [
+        {
+            value: "about", title: "About"
+        },
+        {
+            value: "experience", title: "Experience"
+        },
+        {
+            value: "projects", title: "Projects"
+        },
+        {
+            value: "contact", title: "Contact"
+        }
+    ]
 
     return (
         <nav className="header__navbar">
-            <Dropdown navCallback={navCallback} />
-        </nav>
-    )
-}
-
-function Nav(props) {
-    
-
-    return (
-        <nav className="header__navbar">
-            {props.children}
+            {
+                props.children ? props.children : 
+                <ul className="navbar_list">
+                    {navContent.map((item, index) => {
+                        return (<li 
+                                className="navbar_list-item"
+                                key={index}
+                                >
+                                    <button 
+                                        className="navbar_button"
+                                        value={item.value} 
+                                        onClick={props}
+                                    >
+                                        {item.title}
+                                    </button>
+                                </li>
+                        )
+                    })}
+                </ul>
+            }
         </nav>
     )
 }
 
 export default Nav;
-
-
-
-// let state = {
-//     links: [
-//         {
-//             id: 0,
-//             title: 'Home',
-//             selected: false,
-//             key: 'links'
-//         },
-//         {
-//             id: 1,
-//             title: 'Projects',
-//             selected: false,
-//             key: 'links'
-//         },
-//         {
-//             id: 2,
-//             title: 'About Me',
-//             selected: false,
-//             key: 'links'
-//         },
-//         {
-//             id: 3,
-//             title: 'Experience',
-//             selected: false,
-//             key: 'links'
-//         }
-//     ]
-// }
