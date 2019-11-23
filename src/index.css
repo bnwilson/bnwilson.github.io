@@ -1,8 +1,11 @@
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
+
+
+ /* font-family: 'News Cycle', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'PT Mono', monospace; */
+
+
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|PT+Mono|Pathway+Gothic+One&display=swap');
 
 html {
   font: 20px/1 'Segoe UI';
@@ -14,11 +17,14 @@ html {
   --header-color: rgb(26, 89, 109);
   --header-color-shadow: rgb(11, 55, 68);
   --off-white: #e5e5e5;
+  --light-gray: #a7dbd29d;
+  --light-shadow: #191b1b63;
 }
 
 body {
+  background-color: var(--light-gray);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: News Cycle, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;

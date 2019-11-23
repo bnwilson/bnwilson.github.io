@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Image from '../img/brad_professional.gif';
 import '../styles/styles.css';
 
@@ -23,10 +23,17 @@ export function Logo() {
     )
 }
 
-export function Title() {
+export function Title(props) {
+    const [title, setTitle] = useState("Brad Wilson")
+
+    useEffect(() => {
+        const title = (props.title) ? setTitle(props.title) : "Brad Wilson"
+        setTitle(title);
+    }, [props])
+
     return (
         <h1 className="header__title">
-            Brad Wilson's Portfolio
+            {title}
         </h1>
     )
 }
