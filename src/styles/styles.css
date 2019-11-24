@@ -142,16 +142,17 @@
 /* Navbar */
 
 .navbar_button {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, .0);
+    color: var(--off-white);
     font-family:  'PT Mono', monospace;
     font-size: 16px;
     font-weight: lighter;
+    outline: none;
     padding: 2px 5px;
-    color: var(--off-white);
-    border: none;
-    border-bottom: 2px solid rgba(0, 0, 0, .0);
     transition-property: border-bottom;
     transition-duration: .6s;
-    background: none;
 }
 
 .navbar_button:hover {
