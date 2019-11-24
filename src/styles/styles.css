@@ -3,15 +3,16 @@
     justify-content: space-around;
     padding: 0 2rem;
     background-color: var(--header-color);
-    margin: .5rem 0 .4rem;
+    margin: .5rem 0 .4rem .8rem;
     box-shadow: var(--header-color-shadow) 2px 2px 4px 6px;
 }
 
 .header__image img{
-    border: .1rem solid blue;
+    /* outline: .25rem solid blue; */
     border-radius: 1rem / 1.5rem;
-    padding: .2rem .2rem;
+    padding: .1rem .2rem;
     margin: 0 1rem;
+    box-shadow: rgba(10, 10, 10, .7) 3px 3px 5px;
 }
 
 .header__navbar {
@@ -104,6 +105,7 @@
 .main__content {
     width: 95%;
     margin: 0 auto;
+    padding-top: .5rem;
 }
 
 .main__content__about-box {
@@ -156,6 +158,11 @@
     cursor: pointer;
     border-bottom: 2px solid rgba(255, 255, 255, .8);
     color: white;
+}
+
+.navbar_button.navbar_button__active {
+    color: gold;
+    border-bottom: 2px solid gold;
 }
 
 .navbar_list {

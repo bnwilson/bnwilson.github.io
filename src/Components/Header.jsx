@@ -14,12 +14,14 @@ export function Header(props) {
 
 export function Logo() {
     return (
-        <a
-            className="header__image"
-            href="/"
-        >
-            <img src={Image} alt="Brad"></img>
-        </a>
+        <div>
+            <a
+                className="header__image"
+                href="/"
+            >
+                <img src={Image} alt="Brad"></img>
+            </a>
+        </div>
     )
 }
 

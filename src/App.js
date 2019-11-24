@@ -20,6 +20,10 @@ function App() {
   function handleNavClick (event) {
     event.preventDefault();
     let mainContentKey = event.currentTarget.getAttribute('value');
+    let prevNav = document.querySelector('.navbar_button__active');
+    prevNav && 
+      prevNav.classList.toggle('navbar_button__active');
+    event.currentTarget.classList.toggle('navbar_button__active');
     setMain(mainContentKey);
   }
 
