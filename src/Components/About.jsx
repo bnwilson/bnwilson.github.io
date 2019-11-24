@@ -30,8 +30,10 @@ function About (props) {
                     <Logo/>
                     <span className="about_text-box">
                         <p className="about_text">
-                            Hello! My name is Brad - I'm a full-stack javascript developer 
+                            Hello! My name is Brad - I'm a full-stack Javascript developer 
                             from Columbus, Ohio. 
+                            <br/><br/>
+                            
                             <br/><br/>
                             Thanks for checking out my portfolio!
                         </p>
@@ -40,12 +42,14 @@ function About (props) {
             </div>
             <div className="about-wrapper">
                 <span className="content_box">
-                    <h2 
-                        className="about-header average-title"
-                        onClick={handleClick}
-                        value="average"
-                        >Average...
-                    </h2>
+                    <div className="about-header__wrapper">
+                        <h2 
+                            className="about-header average-title"
+                            onClick={handleClick}
+                            value="average"
+                            >Average
+                        </h2>
+                    </div>
                     <div className="about-list-avg">
                         <ul>
                             <li className="about-hidden">Golfer</li>
@@ -57,12 +61,14 @@ function About (props) {
                     </div>
                 </span>
                 <span className="content_box">
-                    <h2 
-                        className="about-header awesome-title"
-                        onClick={handleClick}
-                        value="awesome"
-                        >Awesome...
-                    </h2>
+                    <div className="about-header__wrapper">
+                        <h2 
+                            className="about-header awesome-title"
+                            onClick={handleClick}
+                            value="awesome"
+                            >Awesome
+                        </h2>
+                    </div>
                     <div className="about-list-awesome">
                         <ul>
                             <li className="about-hidden">Full-stack Javascript Developer</li>
