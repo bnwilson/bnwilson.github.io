@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap');
+/* font-family: 'Nothing You Could Do', cursive; */
 
 .about__content-wrapper {
     margin-top: .5rem;
 }
 
-.about-header {
+.about-button {
     text-align: center;
     cursor: pointer;
     padding: .5rem 10px;
@@ -16,11 +18,11 @@
     box-shadow: var(--light-shadow) 2px 2px 4px;
 }
 
-.about-header:hover {
+.about-button:hover {
     background-color: rgba(3, 194, 3, 0.698);
 }
 
-.about-header:active {
+.about-button:active {
     box-shadow: none;
     transform: translate(1px, 2px);
 }
@@ -31,12 +33,18 @@
     align-content: center;
     padding: .5rem 0;
     border-bottom: 2px solid var(--light-shadow);
-    background-color: var(--header-color);
+    background-color: hsl(2, 57%, 40%);
+    background-image: repeating-linear-gradient(transparent, 
+        transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+    repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+    repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+    background-repeat: space;
 }
 
 .about-hidden {
+    font-family: 'Nothing You Could Do', cursive;
     font-size: 1.5rem;
-    padding: 3px 0;
+    padding: .25rem 0 .3rem 2rem;
     visibility: hidden;
     opacity: 0%;   
 }
@@ -49,7 +57,6 @@
 }
 
 .about-list-avg {
-    
     margin: 5px;
 }
 
@@ -61,14 +68,41 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: .25rem 1rem;
+    margin-bottom: .3rem;
+    margin-top: .3rem;
+    opacity: 100%;
+    padding: .4rem 0;
+}
+
+.about-me-wrapper {
+    /* opacity: 45%; */
+    background-color: var(--subheader-subheader-color);
+    box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
+
+    /* background: rgba(0, 0, 0, 0.6) */
+}
+
+
+.about_text {
+    color: var(--off-white);
+    text-align: center;
 }
 
 .about_text-box {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    margin-right: .4rem;
+    
 }
+
+/* .about_text-box {
+    align-content: center;
+    align-items: center;
+    background-color: var(--subheader-color);
+    box-shadow: var(--subheader-color-shadow) 3px 4px 3px;
+    display: flex;
+    justify-content: center;
+    margin-right: .4rem;
+    text-align: center;
+} */
 
 .about-wrapper {
     display: grid;
@@ -77,15 +111,31 @@
 }
 
 .content_box *{
-    list-style-image: none;
     list-style: none;
 }
 
-.content_box {
+.content_box ul li::before{
+    content: "-";
+    padding-right: .4rem;
+    text-indent: -5px;
+}
+
+/* .content_box {
     display: flex;
     flex-direction: column;
     background-color: white;
     box-shadow: var(--light-shadow) 2px 2px 3px 3px;
+    margin: .5rem .5rem;
+} */
+
+.content_box {
+    background-color: #fff;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+        linear-gradient(#eee .1em, transparent .1em);
+    background-size: 90% .98em;
+    background-position: -.5rem;
+    box-shadow: var(--light-shadow) 2px 2px 2px 4px;
     margin: .5rem .5rem;
 }
 

@@ -19,6 +19,10 @@ html {
   --off-white: #e5e5e5;
   --light-gray: #a7dbd29d;
   --light-shadow: #191b1b63;
+  --subheader-color: rgba(90, 176, 219, 0.966);
+  --subheader-color-shadow: rgba(23, 56, 66, 0.739);
+  --subheader-subheader-color: rgba(55, 111, 139, 0.685);
+  --subheader-subheader-color-shadow: rgba(23, 56, 66, 0.739);
 }
 
 body {

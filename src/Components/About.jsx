@@ -21,7 +21,6 @@ function About (props) {
             addRemoveHidden('.about-list-avg li') : 
             addRemoveHidden('.about-list-awesome li')
     }
-
     return (
         <div className="about__content-wrapper">
             {props.children}
@@ -30,7 +29,9 @@ function About (props) {
                     <Logo/>
                     <span className="about_text-box">
                         <p className="about_text">
-                            Hello! My name is Brad - I'm a full-stack Javascript developer 
+                            Hello! 
+                            <br/><br/>
+                            My name is Brad - I'm a full-stack Javascript developer 
                             from Columbus, Ohio. 
                             <br/><br/>
                             
@@ -44,7 +45,7 @@ function About (props) {
                 <span className="content_box">
                     <div className="about-header__wrapper">
                         <h2 
-                            className="about-header average-title"
+                            className="about-button average-title"
                             onClick={handleClick}
                             value="average"
                             >Average
@@ -63,7 +64,7 @@ function About (props) {
                 <span className="content_box">
                     <div className="about-header__wrapper">
                         <h2 
-                            className="about-header awesome-title"
+                            className="about-button awesome-title"
                             onClick={handleClick}
                             value="awesome"
                             >Awesome
@@ -75,6 +76,7 @@ function About (props) {
                             <li className="about-hidden">Agile and Scrum practitioner</li>
                             <li className="about-hidden">Ping-Pong / Table Tennis-er</li>
                             <li className="about-hidden">Pair-Program practitionerCo-worker</li>
+                            <li className="about-hidden">Co-worker</li>
                             <li className="about-hidden">Employee</li>
                             <li className="about-hidden">OAS Follower</li>
                             <li className="about-hidden">Friend</li>
