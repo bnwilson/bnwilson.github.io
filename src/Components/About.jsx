@@ -57,7 +57,10 @@ function About (props) {
                             <li className="about-hidden">Bowler</li>
                             <li className="about-hidden">Gamer</li>
                             <li className="about-hidden">Guitarist</li>
-                            <li className="about-hidden">Tinker</li>
+                            <li className="about-hidden">Tinkerer</li>
+                            <li className="about-hidden">Autuomater</li>
+                            <li className="about-hidden">Tennis player</li>
+                            
                         </ul>
                     </div>
                 </span>
