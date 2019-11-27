@@ -1,21 +1,28 @@
 .button-msg-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .contact-email {
     display: flex;
-    justify-items: center;
+    
+    align-items: center;
 }
 
 .contact-icons {
-    padding: 2px 2px;
+    padding:.5rem .5rem;
     margin: .5rem .25rem;
 }
 
-.contact-item__email-tooltip {
+.contact-item__email-hidden-tooltip {
     position: relative;
     color: red;  
+    visibility: hidden;
+}
+
+.unhidden-tooltip {
+    visibility: visible;
 }
 
 .contact-subtitle {
@@ -29,6 +36,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: normal;
 }
 
 .copy-button {
@@ -60,4 +68,8 @@
 .link-img {
     height: 2rem;
     width: 2rem;
+}
+
+.link-img:hover {
+
 }

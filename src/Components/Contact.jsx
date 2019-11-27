@@ -14,7 +14,8 @@ const Contact = (props) => {
         const emailText = document.querySelector('.email-text');
         emailText.select();
         document.execCommand('copy');
-        setCopyMsg(<p className="contact-item__email-tooltip">Copied !</p>)
+        const tooltip = document.querySelector('.contact-item__email-hidden-tooltip');
+        tooltip.classList.toggle('unhidden-tooltip');
     }
 
     return (
@@ -37,6 +38,7 @@ const Contact = (props) => {
                         >
                         Copy Email
                     </button>
+                    <p className="contact-item__email-hidden-tooltip">Copied !</p>
                     {copyMsg}
                 </div>
                 </span>
