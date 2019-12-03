@@ -68,8 +68,11 @@
 .link-img {
     height: 2rem;
     width: 2rem;
+    scale: 50%;
+    transition: .75s;
 }
 
 .link-img:hover {
-
+    transform: scale(1.5);
+    transition-duration: .75;
 }

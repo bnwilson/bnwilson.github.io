@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../styles/styles.css';
 import '../styles/about.css';
 import {Logo} from './Header';
@@ -21,6 +21,12 @@ function About (props) {
             addRemoveHidden('.about-list-avg li') : 
             addRemoveHidden('.about-list-awesome li')
     }
+
+    useEffect(() => {
+        addRemoveHidden('.about-list-avg li');
+        addRemoveHidden('.about-list-awesome li');
+    })
+    
     return (
         <div className="about__content-wrapper">
             {props.children}
@@ -33,7 +39,7 @@ function About (props) {
                             <br/><br/>
                             My name is Brad - I'm a full-stack Javascript developer 
                             from Columbus, Ohio. 
-                            <br/><br/>
+                            <br/>
                             
                             <br/><br/>
                             Thanks for checking out my portfolio!
@@ -44,14 +50,15 @@ function About (props) {
             <div className="about-wrapper">
                 <span className="content_box">
                     <div className="about-header__wrapper">
-                        <h2 
+                        {/* <h2 
                             className="about-button average-title"
                             onClick={handleClick}
                             value="average"
                             >Average
-                        </h2>
+                        </h2> */}
                     </div>
                     <div className="about-list-avg">
+                        <h1 className="about-list--title">Average...</h1>
                         <ul>
                             <li className="about-hidden">Golfer</li>
                             <li className="about-hidden">Bowler</li>
@@ -66,14 +73,15 @@ function About (props) {
                 </span>
                 <span className="content_box">
                     <div className="about-header__wrapper">
-                        <h2 
+                        {/* <h2 
                             className="about-button awesome-title"
                             onClick={handleClick}
                             value="awesome"
                             >Awesome
-                        </h2>
+                        </h2> */}
                     </div>
                     <div className="about-list-awesome">
+                        <h1 className="about-list--title">Awesome...</h1>
                         <ul>
                             <li className="about-hidden">Full-stack Javascript Developer</li>
                             <li className="about-hidden">Agile and Scrum practitioner</li>

@@ -136,8 +136,8 @@
 .main__content-title {
     text-align: center;
     padding: .25rem 0;
-    color: var(--off-white);
-    text-shadow: var(--header-color-shadow) -5px -5px 1rem;
+    /* color: var(--off-white); */
+    text-shadow: rgba(19, 37, 139, 0.452) -5px -5px 1rem;
 }
 
 /* Navbar */

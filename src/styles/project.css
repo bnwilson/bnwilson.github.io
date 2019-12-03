@@ -38,8 +38,6 @@
 }
 
 .project-table__caption {
-    display: flex;
-    align-content: center;
     text-align: center;
     padding: 1rem 1rem;
     margin: 2rem 4rem 1.5rem;

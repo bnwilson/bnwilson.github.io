@@ -6,8 +6,8 @@ const Projects = (props) => {
     return (
         <div className="main__content-wrapper">
             {props.children}
-            <p className="project-table__caption">My collection of publically-shared projects. Feel free to reach out to me with any questions, or raise a Github issue!
-            <br/><br/>
+            <p className="project-table__caption">
+                My collection of publically-shared projects. Feel free to reach out to me with any questions, or raise a Github issue!
             </p>
             <table className="project-table">
                 <thead className="project-table__header">
@@ -42,6 +42,12 @@ const Projects = (props) => {
                         <td>Script which moves my MacOS Desktop screenshots to a screenshot folder.</td>
                         <td>Python</td>
                         <td><a href="https://github.com/bnwilson/projects/tree/master/move-mac-screenshots">Github Link</a></td>
+                    </tr>
+                    <tr className="project-table__row">
+                        <th>Blackjack</th>
+                        <td>Just a simple game of Blackjack, starting with 300 chips.</td>
+                        <td>Javascript, html/css</td>
+                        <td><a href="bnwilson.github.io/blackjack-blackjack">Github Link</a></td>
                     </tr>
                 </tbody>
 

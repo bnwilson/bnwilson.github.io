@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import {Header, Logo, Title} from './Components/Header';
 import Nav from './Components/Nav';
@@ -8,7 +8,20 @@ import MainContent from './Components/MainContent';
 
 
 function App() {
-  const [main, setMain] = useState("about")
+  const home = "about"
+  const [main, setMain] = useState(home)
+
+  const activateNavByValue = (navHomeKey) => {
+    const navItems = document.querySelectorAll('.navbar_button');
+    const navItemList = {
+      "about": navItems[0],
+      "experience": navItems[1],
+      "projects": navItems[2],
+      "contact": navItems[3]
+    }
+    navItems ? navItemList[navHomeKey].classList.toggle('navbar_button__active') : console.log(navItemList)
+  }
+  useEffect(() => { activateNavByValue(home)},[home]);
 
   const mainHeader = (
     <Header>
