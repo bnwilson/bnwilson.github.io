@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-items: center;
+    padding-left: .45rem;
 }
 
 .contact-email {
     display: flex;
-    
+    padding-left: 2rem;
     align-items: center;
 }
 
@@ -69,10 +71,10 @@
     height: 2rem;
     width: 2rem;
     scale: 50%;
-    transition: .75s;
+    transition: .6s;
 }
 
 .link-img:hover {
     transform: scale(1.5);
-    transition-duration: .75;
+    transition-duration: .2s;
 }

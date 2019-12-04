@@ -1,0 +1,27 @@
+.experience_arrow {
+    padding: .5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.experience_card {
+    display: grid;
+    grid-template-columns: .15fr 10fr;
+    grid-template-rows: 5rem;
+    padding: 1rem 1rem;
+    margin: .25rem 4rem .25rem;
+    
+}
+
+.experience_card-wrapper {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.experience_text {
+    padding: 1rem .65rem;
+    background-color: var(--subheader-subheader-color);
+    box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
+    color: var(--off-white)
+}

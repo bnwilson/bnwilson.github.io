@@ -47,7 +47,13 @@ const Projects = (props) => {
                         <th>Blackjack</th>
                         <td>Just a simple game of Blackjack, starting with 300 chips.</td>
                         <td>Javascript, html/css</td>
-                        <td><a href="bnwilson.github.io/blackjack-blackjack">Github Link</a></td>
+                        <td><a href="https://bnwilson.github.io/blackjack-blackjack">Github Link</a></td>
+                    </tr>
+                    <tr className="project-table__row">
+                        <th>Blog site</th>
+                        <td>Create a user, choose your avatar, create posts and view others'.</td>
+                        <td>NodeJS, ExpressJS, sequelize, handlebars, MVC, MySQL, html/css</td>
+                        <td><a href="https://github.com/WeCanCodeIT/blog-mastery-brad-richard">Github Link</a></td>
                     </tr>
                 </tbody>
 
