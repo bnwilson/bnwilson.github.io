@@ -1,0 +1,50 @@
+
+
+ /* font-family: 'News Cycle', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'PT Mono', monospace; */
+
+
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|PT+Mono|Pathway+Gothic+One&display=swap');
+
+
+html {
+  font: 20px/1 'Segoe UI';
+
+  /* Colors */
+  --box-shadow: rgba(0,0,0,0.2);
+  --button-color-hover: #c01f1f;
+  --button-color: #ee0e0e;
+  --header-color: rgb(26, 89, 109);
+  --header-color-shadow: rgb(11, 55, 68);
+  --off-white: #e5e5e5;
+  --light-gray: #a7dbd29d;
+  --light-shadow: #191b1b63;
+  --subheader-color: rgba(90, 176, 219, 0.966);
+  --subheader-color-shadow: rgba(23, 56, 66, 0.739);
+  --subheader-subheader-color: rgba(55, 111, 139, 0.685);
+  --subheader-subheader-color-shadow: rgba(23, 56, 66, 0.739);
+  --table-color-1: rgba(211, 221, 240, 0.746);
+  --table-color-2: rgba(189, 191, 204, 0.904);
+  --table-color-3: rgba(18, 100, 66, 0.911);
+
+  /* Fonts */
+  /* --table-font: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+  --table-font: 'News Cycle', sans-serif;
+  --table-font-color: rgb(22, 23, 26);
+}
+
+body {
+  background-color: var(--light-gray);
+  margin: 0;
+  font-family: News Cycle, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
