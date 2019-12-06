@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../styles/styles.css';
 import '../styles/contact.css';
 import gmailIcon from '../img/002-gmail-1.svg';
@@ -8,6 +8,8 @@ import gitHubIcon from '../img/github_icon.svg';
 
 const Contact = (props) => {
     const [copyMsg, setCopyMsg] = useState("");
+
+    useEffect(() => setCopyMsg("Copied !"), [])
 
     const handleEmailCopy = (event) => {
         event.preventDefault();
@@ -38,8 +40,7 @@ const Contact = (props) => {
                         >
                         Copy Email
                     </button>
-                    <p className="contact-item__email-hidden-tooltip">Copied !</p>
-                    {copyMsg}
+                    <p className="contact-item__email-hidden-tooltip">{copyMsg}</p>
                 </div>
                 </span>
                 <span className="contact-icons">

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import {Header, Logo, Title} from './Components/Header';
+import {Header, Title} from './Components/Header';
 import Nav from './Components/Nav';
 import MainContent from './Components/MainContent';
 

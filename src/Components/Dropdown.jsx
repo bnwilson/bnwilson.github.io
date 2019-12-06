@@ -1,11 +1,14 @@
 import React from 'react';
 import '../styles/styles.css';
-// import MainContent from './MainContent';
 
 class Dropdown extends React.Component {
+    // props: 
+    //    'title'       <string>   -> title of default selection; defaults to '-- Selection --'
+    //    'navCallback' <function> -> callback to handle click event for each item in dropdown
+    //    'items'       <array>    -> array of objects with valies of each click; properties: 'value', 'name'
+
     constructor(props) {
         super(props);
-        console.log(props)
 
         this.state = {
             displayMenu: false
@@ -27,8 +30,6 @@ class Dropdown extends React.Component {
         });
     };
 
-   
-
     render() {
         return (
             <div 
@@ -39,38 +40,20 @@ class Dropdown extends React.Component {
                 className="header__navbar-button" 
                 onClick={this.showDropdownMenu}
                 >
-                    Home
+                    {this.props.title ? this.props.title : " -- Selection --"}
                 </div>
                 { this.state.displayMenu ? (
                     <ul>
-                        <li>
-                            <a className="active" 
-                               onClick={this.props.navCallback} 
-                               value="about" 
-                               href="/about" >About Me
-                            </a>
-                        </li>
-                        <li>
-                            <a className="active" 
-                               onClick={this.props.navCallback} 
-                               value="projects" 
-                               href="/" >My Projects
-                            </a>
-                        </li>
-                        <li>
-                            <a className="active" 
-                               onClick={this.props.navCallback} 
-                               value="contact" 
-                               href="/contact">Contact Me
-                            </a>
-                        </li>
-                        <li>
-                            <a className="active" 
-                               onClick={this.props.navCallback} 
-                               value="experience" 
-                               href="/experience">My Experience
-                            </a>
-                        </li>
+                        {this.props.items && this.props.items.map((item, index) =(
+                            <li>
+                                <a className="active" 
+                                key={index}
+                                onClick={this.props.navCallback} 
+                                value="about" 
+                                href="/about" >About Me
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 ):
                 (
@@ -81,9 +64,5 @@ class Dropdown extends React.Component {
         )
     }
 }
-
-// const handleClick = event => {
-//     MainContent({key: event.target.value}) 
-// }
 
 export default Dropdown;
