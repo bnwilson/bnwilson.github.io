@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.226bd19a.chunk.css",
+    "main.css": "/static/css/main.32087221.chunk.css",
     "main.js": "/static/js/main.511c20b6.chunk.js",
     "main.js.map": "/static/js/main.511c20b6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a5eaf332.js",
@@ -8,9 +8,9 @@
     "static/js/2.8445eada.chunk.js": "/static/js/2.8445eada.chunk.js",
     "static/js/2.8445eada.chunk.js.map": "/static/js/2.8445eada.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b8e9c84fa8e0ed11a16a1d6e42d22ca0.js": "/precache-manifest.b8e9c84fa8e0ed11a16a1d6e42d22ca0.js",
+    "precache-manifest.e655408c6d8517ba9d93c494878a5b8a.js": "/precache-manifest.e655408c6d8517ba9d93c494878a5b8a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.226bd19a.chunk.css.map": "/static/css/main.226bd19a.chunk.css.map",
+    "static/css/main.32087221.chunk.css.map": "/static/css/main.32087221.chunk.css.map",
     "static/media/002-gmail-1.svg": "/static/media/002-gmail-1.23a7dee5.svg",
     "static/media/009-discord-1.svg": "/static/media/009-discord-1.cc8afd29.svg",
     "static/media/brad_professional.gif": "/static/media/brad_professional.19174f51.gif",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.a5eaf332.js",
     "static/js/2.8445eada.chunk.js",
-    "static/css/main.226bd19a.chunk.css",
+    "static/css/main.32087221.chunk.css",
     "static/js/main.511c20b6.chunk.js"
   ]
 }
