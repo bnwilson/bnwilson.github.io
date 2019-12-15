@@ -20,6 +20,25 @@ const Projects = (props) => {
                 </thead>
                 <tbody className="project-table__body">
                     <tr className="project-table__row">
+                        <th>D&amp;D Character Creator (Frontend)</th>
+                        <td>
+                            Interactive Dungeons and Dragons&copy; character creator, choose your character Name, Race,
+                            Class, Alignment, and input your attributes and the app will calculate your stats,
+                            bonus attributes, and stats!.
+                        </td>
+                        <td>ReactJS, Create React App, Javascript, html/css, fetch, webpack, jest</td>
+                        <td><a href="https://github.com/DnDnU/dnd-character-sheet-frontend">Github Link</a></td>
+                    </tr>
+                    <tr className="project-table__row">
+                        <th>D&amp;D Character Creator (Backend)</th>
+                        <td>
+                            API-layer for D&amp;D, utilizes dnd5eapi.co to access up-to-date race and 
+                            class data. Also handles the dice rolls for stats (6x d6 rolls and returns highest 3 values).
+                        </td>
+                        <td>NodeJS, ExpressJS, node-fetch, jest</td>
+                        <td><a href="https://github.com/DnDnU/dnd-character-sheet-backend">Github Link</a></td>
+                    </tr>
+                    <tr className="project-table__row">
                         <th>Highstreet Hospital</th>
                         <td>Console-based Hospital. Generates Hospital staff, patients, along with randomized names.</td>
                         <td>NodeJS, Javascript (ES6), readline-sync, https (REST call to name-generator)</td>
