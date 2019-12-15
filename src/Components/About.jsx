@@ -79,7 +79,7 @@ function About (props) {
                             <li className="about-hidden">Full-stack Javascript Developer</li>
                             <li className="about-hidden">Agile and Scrum practitioner</li>
                             <li className="about-hidden">Ping-Pong / Table Tennis-er</li>
-                            <li className="about-hidden">Pair-Program practitionerCo-worker</li>
+                            <li className="about-hidden">Pair-Program practitioner</li>
                             <li className="about-hidden">Co-worker</li>
                             <li className="about-hidden">Employee</li>
                             <li className="about-hidden">OAS Follower</li>
