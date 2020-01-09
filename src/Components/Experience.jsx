@@ -46,18 +46,14 @@ const experienceSections = [
 
 
 
+// {/* <img className="experience_arrow" src={Arrow} alt={""}></img> */}
 const ExperienceCard = ({text}) => {
     return (
         <div className="experience_card">
-                <span className="experience_card-wrapper">
-                    <img className="experience_arrow" src={Arrow} alt={""}></img>
-                </span>
-                <span className="experience_card-wrapper">
-                    <p className="experience_text">
-                        {text}
-                    </p>
-                </span>
-            </div>
+            <span className="experience_card-wrapper">
+                {text}
+            </span>
+        </div>
     )
 }
 
@@ -68,7 +64,7 @@ const ExperienceMain = ({props}) => {
             <h2 className="experience_header">
                 {props.title}
             </h2>
-            <div >
+            <div className="experiences">
                 {props.experience.map((item, index) => (
                     <ExperienceCard text={item} key={index}/>
                 ))}
@@ -90,12 +86,12 @@ const Experience = (props) => {
     }
 
     return (
-        <div className="main__content-wrapper">
+        <div className="experience-wrapper">
             {/* Header */}
             {props.children}
             <div className="experience_tabs">
                 {sectionItems.map((item, index) => (
-                    <label className="experience_tab"
+                    <label className={index === activeTabIndex ? "experience_tab_active" : "experience_tab"}
                         key={index}
                         value={index}
                         onClick={handleTabClick}
