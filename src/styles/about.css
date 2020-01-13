@@ -73,15 +73,20 @@
 
 .about-me__subheader {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: .25rem 1rem;
-    margin: 2rem 0;
+    grid-template-columns: minmax(15vw, 1fr) minmax(15vw, 1.5fr);
+    gap: .25rem .4rem;
+    margin: 1rem 0;
     padding: .4rem 0;
 }
 
 .about-me-wrapper {
     background-color: var(--subheader-subheader-color);
     box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
+    max-width: 70vw;
+    min-width: 530px;
+    margin: 0 auto;
+
+    
 }
 
 
@@ -109,6 +114,8 @@
 .about-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(40vh, auto);
+    /* grid-template-columns: 1fr 1fr; */
     gap: .2rem .4rem;
 }
 
