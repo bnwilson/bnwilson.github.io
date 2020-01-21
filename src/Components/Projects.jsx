@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/styles.css';
 import '../styles/project.css';
+import {ReactComponent as ExternalIcon} from '../img/external-link-symbol.svg';
 
 const ProjectData = require('../static/project-data');
 
@@ -25,11 +26,23 @@ const Projects = (props) => {
                         <th>{project.title}</th>
                         <td>{project.info}</td>
                         <td>{project.tools}</td>
-                        <td><a href={project.urlLink}>{project.urlText}</a></td>
+                        <td>
+                            <a 
+                                rel="noopener noreferrer"
+                                dataIcon="external" 
+                                target="_blank"
+                                href={project.urlLink}
+                            >
+                                {project.urlText}
+                                <ExternalIcon fill="rgba(23, 56, 66, 0.739)" className="project-table__row-link" />
+                            </a>
+                            
+                        </td>
                     </tr>
                 ))}
             </tbody>
         </table>
+        <div className="icon-credit">External Icon made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
     )
 }

@@ -15,7 +15,7 @@
     padding: 1rem .65rem;
     background-color: var(--subheader-subheader-color);
     box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
-    color: var(--off-white);
+    color: var(--bright-white);
     transition: .4s;
 }
 
@@ -32,6 +32,7 @@
 
 .experience_header {
     text-align: center;
+    color: var(--bright-white2);
 }
 
 .experience_content {

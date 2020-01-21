@@ -146,7 +146,7 @@
     border: none;
     border-bottom: 2px solid rgba(0, 0, 0, .0);
     border-bottom-width: 0%;
-    color: var(--off-white);
+    color: var(--bright-white2);
     font-family:  'PT Mono', monospace;
     font-size: 16px;
     font-weight: lighter;
@@ -159,7 +159,7 @@
 .navbar_button:hover {
     cursor: pointer;
     border-bottom: 2px solid rgba(255, 255, 255, .8);
-    color: white;
+    color: var(--bright-white);
 }
 
 .navbar_button.navbar_button__active {

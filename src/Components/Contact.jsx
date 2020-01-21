@@ -44,7 +44,7 @@ const Contact = (props) => {
                 </div>
                 </span>
                 <span className="contact-icons">
-                    <a className="link-item" href="https://linkedin.com/li/bnwilson">
+                    <a className="link-item" href="https://linkedin.com/in/bnwilson">
                         <img className="link-img" src={linkedInIcon} alt="LinkedIn"></img>
                     </a>
                     <a className="link-item" href="https://github.com/bnwilson/brad-portfolio/issues">

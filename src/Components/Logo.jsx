@@ -4,7 +4,7 @@ import '../styles/styles.css';
 
 function Logo() {
     return (
-        <div>
+        <div style={{margin: "0 auto"}}>
             <a
                 className="header__image"
                 href="/"

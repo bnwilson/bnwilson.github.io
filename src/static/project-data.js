@@ -11,7 +11,7 @@ module.exports = {
                   "submit a commission request, drop a line, or purchase BLA original stickers, portraits, decals, and drawings. " +
                   "Utilizes functions, server-side rendering, and Netlify CMS so the artist can update her content independently.",
             tools: "ReactJS, NextJS, function, SendGrid (emails), Netlify, NetlifyCMS, reCaptcha, Responsive-design",
-            urlLink: "www.blaillustrations.netlify.com",
+            urlLink: "https://www.blaillustrations.com",
             urlText: "Website Link"
         },
         {
