@@ -27,15 +27,13 @@ function About (props) {
                 <span className="about-me__subheader">
                     <Logo/>
                     <span className="about_text-box">
+                        <h2 className="about_text_greeting">Hello!</h2>
                         <p className="about_text">
-                            Hello! 
-                            <br/><br/>
                             My name is Brad - I'm a full-stack Javascript developer 
-                            from Columbus, Ohio. 
+                            from Columbus, Ohio. This portfolio was created with React as a Single Page Application.
                             <br/>
-                            
-                            <br/><br/>
-                            Thanks for checking out my portfolio!
+                            <br/>
+                            Thanks for checking it out!
                         </p>
                     </span>
                 </span>

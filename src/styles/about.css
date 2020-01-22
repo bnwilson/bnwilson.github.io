@@ -85,14 +85,18 @@
     max-width: 70vw;
     min-width: 530px;
     margin: 0 auto;
-
-    
 }
 
+/* About subheader */
+.about_text_greeting {
+    color: var(--bright-white2);
+    text-align: center;
+}
 
 .about_text {
     color: var(--off-white);
     text-align: center;
+    
 }
 
 .about_text-box {

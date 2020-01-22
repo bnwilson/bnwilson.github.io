@@ -5,21 +5,22 @@
     font-family: 'PT Mono', monospace; */
 
 
-@import url('https://fonts.googleapis.com/css?family=News+Cycle|PT+Mono|Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|News+Cycle|PT+Mono|Pathway+Gothic+One&display=swap');
 
 
 html {
   font: 20px/1 'Segoe UI';
 
   /* Colors */
+  --active-exp-tab: rgb(200, 255, 240);
   --box-shadow: rgba(0,0,0,0.2);
   --button-color-hover: #c01f1f;
   --button-color: #ee0e0e;
   --header-color: rgb(26, 89, 109);
   --header-color-shadow: rgb(11, 55, 68);
   --off-white: #e5e5e5;
-  --bright-white: #effac2;
-  --bright-white2: #d1e28d;
+  --bright-white: #91fdac;
+  --bright-white2: #bef1fa;
   --light-gray: #a7dbd29d;
   --light-shadow: #191b1b63;
   --subheader-color: rgba(90, 176, 219, 0.966);
