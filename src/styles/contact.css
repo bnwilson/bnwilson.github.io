@@ -1,0 +1,80 @@
+.button-msg-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding-left: .45rem;
+}
+
+.contact-email {
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
+}
+
+.contact-icons {
+    padding:.5rem .5rem;
+    margin: .5rem .25rem;
+}
+
+.contact-item__email-hidden-tooltip {
+    position: relative;
+    color: red;  
+    visibility: hidden;
+}
+
+.unhidden-tooltip {
+    visibility: visible;
+}
+
+.contact-subtitle {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+}
+
+.copy-button {
+    text-align: center;
+    cursor: pointer;
+    padding: .5rem 10px;
+    margin: 1px .5rem;
+    border-radius: 20% / 55%;
+    border: 3px outset rgba(185, 187, 216, 0.698);
+    /* background-color: rgba(179, 180, 255, 0.5); */
+    background-color: rgb(20, 144, 20);
+    color: var(--off-white);
+    box-shadow: var(--light-shadow) 2px 2px 4px;
+}
+
+.copy-button:hover {
+    background-color: rgba(3, 194, 3, 0.698);
+}
+
+.copy-button:active {
+    box-shadow: none;
+    transform: translate(1px, 2px);
+}
+
+.link-item {
+    margin: .25rem 1rem;
+}
+
+.link-img {
+    height: 4rem;
+    width: 4rem;
+    scale: 50%;
+    transition: .6s;
+}
+
+.link-img:hover {
+    transform: scale(1.5);
+    transition-duration: .2s;
+}

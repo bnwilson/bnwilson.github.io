@@ -1,0 +1,102 @@
+.experience_arrow {
+    padding: .5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.experience_card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    min-width: 8rem;
+    min-height: 5rem;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem .65rem;
+    background-color: var(--subheader-subheader-color);
+    box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
+    color: var(--bright-white);
+    transition: .4s;
+}
+
+.experience_card:hover {
+    box-shadow: var(--subheader-subheader-color-shadow) -2px -2px 3px 4px;
+    transition-duration: .5s;
+}
+
+.experience_card-wrapper {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    margin: .2rem;
+    padding: .2rem;
+}
+
+.experience_header {
+    text-align: center;
+    color: var(--bright-white2);
+}
+
+.experience_content {
+    padding: 1rem .65rem;
+    background-color: var(--subheader-subheader-color);
+    box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
+    color: var(--off-white);
+}
+
+.experience_tab {
+    background-color: rgba(27, 95, 104, 0.9);
+    box-shadow: rgba(20, 60, 93, 0.9) -1px -1px 1px 2px;
+    color: var(--off-white);
+    padding: .5rem .5rem;
+    margin: 0 .05rem;
+}
+
+.experience_tab_active {
+    background-color: rgba(74, 175, 189, 0.9);
+    box-shadow: rgba(17, 77, 112, 0.9) 1px 1px 2px 1px;
+    color: var(--active-exp-tab);
+    padding: .5rem .5rem;
+    margin: 0 .05rem;
+}
+
+.experience_tab:hover {
+    background-color: rgba(13, 56, 61, 0.9);
+    color: rgba(72, 154, 165, 0.9);
+    cursor: pointer;
+    
+}
+
+.experience_tabs {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 2px;
+    z-index: -10;
+}
+
+
+.experience_text {
+    padding: 1rem .65rem;
+    background-color: var(--subheader-subheader-color);
+    box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
+    color: var(--off-white);
+    min-height: 60vh;
+
+}
+
+.experiences {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-flow: row;
+    gap: 1rem;
+    align-content: start;
+    padding: 1rem 7rem;
+}
+
+.experience-wrapper {
+    margin: 0 auto;
+    padding: 1px;
+}

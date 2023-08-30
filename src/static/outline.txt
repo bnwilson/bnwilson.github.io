@@ -1,0 +1,69 @@
+#Title
+Brad Wilson
+
+#Subtitle
+Code, Projects, and Me
+
+#Sections
+About
+My Projects
+Contact
+My Experience
+
+#About
+Average...
+Golfer
+Bowler
+Gamer
+Guitarist
+Tinker
+
+Awesome...
+Full-stack Javascript Developer
+Agile and Scrum practitioner
+Pair-Program practitionerCo-worker
+Employee
+Friend
+OAS Follower
+Ping-Pong / Table Tennis-er
+
+Self-educating, quick-learning and motivated individual, with over 6-years’ experience in assisting customers with IT solutions.
+I'm a technology enthusiest on the surface and at heart, who enjoys solving problems and working on projects.  
+
+#Projects
+Name | Description | Tech | Link
+Highstreet Hospital
+Console-based Hospital. Generates Hospital staff, patients, along with randomized names.
+NodeJS, Javascript (ES6), readline-sync, https (REST call to name-generator)
+https://github.com/bnwilson/projects/tree/master/high-street-hospital
+
+Fortune Teller
+er a series of questions and get your fortune read! The results are not always crystal clear.
+NodeJS, Javascript (ES6), readline-sync
+https://github.com/bnwilson/projects/tree/master/fortune-teller
+
+Guessing Game
+You get 3 tries to guess a number 1-10, if you don't guess the correct number in 3 tries you lose!
+NodeJS, Javascript (ES6), readline-sync
+https://github.com/bnwilson/projects/tree/master/guessing-game
+
+Move Mac Screenshots
+Script which moves my MacOS Desktop screenshots to a screenshot folder.
+Python
+https://github.com/bnwilson/projects/tree/master/move-mac-screenshots
+
+Blackjack
+Game of 21, choose your ante and bet start with 200 chips
+Javascript, webpack, html/css
+https://bnwilson.github.io/blackjack-blackjack
+
+#Experiences
+Utilized Python, Shell, and Orchestration to automate manual processes.
+Leveraged Apigee and cloud-agnostic Function As a Service to house serverless functions for automation and testing.
+Built ChatOps chatbot using Github's Hubot framework (NodeJS) with an adapter for Rocketchat.
+
+#Contact
+Feel free to contact me with any questions, remarks, feedback or just to shoot the breeze!
+bwilson.projects@gmail.com - mailto:bwilson.projects@gmail.com
+LinkedIn - https://linkedin.com/li/bnwilson
+GitHub Issues - https://github.com/bnwilson/brad-portfolio/issues

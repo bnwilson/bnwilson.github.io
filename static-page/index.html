@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brad's Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<!-- <script>
+    Random Brad attribute functions
+    var avgSkillsArr = ['bowler', 'golfer', 'guitarist', 'drummer', 'gamer'];
+    var awesomeSkillsArr = ['coder', 'learner', 'co-worker', 'friend', 'employee'];
+
+    function getRandomAvg () {
+        var randomRoll = Math.floor(Math.random()*avgSkillsArr.length);
+        var val = "Average " + avgSkillsArr[randomRoll];
+        document.getElementById('avgSkills').after(val);
+    }
+    function getRandomAwesome () {
+        var randomRoll = Math.floor(Math.random()*awesomeSkillsArr.length);
+        var val = "Awesome " + awesomeSkillsArr[randomRoll];
+        document.getElementById('aweSkills').after(val);
+    }
+</script> -->
+<body>
+    <div class="wrapper">
+        <!-- Main Image -->
+        <img class="header__img" src="./public/brad_professional.gif">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__title">
+                <h1 class="header__main-title">Brad Wilson</h1>
+                <h4 class="header__subtitle">Projects, Me, and more</h4>
+            </div>
+            
+        </header>
+
+        <!-- Sidebar Menu -->
+        <nav class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-list__item"><a href="#About">About Me</a></li>
+                <li class="sidebar-list__item"><a href="#Projects">My Projects</a></li>
+                <li class="sidebar-list__item"><a href="#Contact">Contact Me</a></li>
+                <li class="sidebar-list__item"><a href="#Experience">My Experiences</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+
+            <!-- About Me -->
+            <section class="main__section-item">
+                <h2 id="About" class="main__section-title">About Me</h2>
+                <div class="main__body">
+                    <div class="main__body-about-lists">
+                        <ul class="main__body-about-list">
+                            <lh>Average...</lh>
+                            <li>Golfer</li>
+                            <li>Bowler</li>
+                            <li>Gamer</li>
+                            <li>Guitar Player</li>
+                            <li>Tinker</li>
+                        </ul>
+                        <ul class="main__body-about-list">
+                            <lh>Awesome...</lh>
+                            <li>Full-stack Javascript Developer</li>
+                            <li>Agile and Scrum practitioner</li>
+                            <li>Pair-Program Partner</li>
+                            <li>Co-worker</li>
+                            <li>Employee</li>
+                            <li>Friend</li>
+                            <li>OAS Follower</li>
+                            <li>Ping-Pong / Table Tennis-er</li>
+                        </ul>
+                    </div>
+                    <p class="main__text">
+                        Self-educating, quick-learning and motivated individual, with over 6-years’ experience in assisting customers with IT solutions.
+                        <br><br>
+                        I'm a technology enthusiest on the surface and at heart, who enjoys solving problems and working on projects.  
+                    </p>
+                </div>
+            </section>
+
+            <!-- My Projects -->
+            <section class="main__section-item">
+                <h2 id="Projects" class="main__section-title">My Projects</h2>
+                <div class="main__body">
+                    <table class="main__body-table">
+                        <caption class="main__body-table-caption">My collection of publically-shared projects. Feel free to reach out to me with any questions, or raise a Github issue!<br><br></caption>
+                        <thead class="main__body-table-thead">
+                            <tr>
+                                <th><h4>Project Name</h4></th>
+                                <th><h4>Description</h4></th>
+                                <th><h4>Tools Used</h4></Tools></th>
+                                <th><h4>Link</h4></th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Highstreet Hospital</td>
+                            <td>Console-based Hospital. Generates Hospital staff, patients, along with randomized names.</td>
+                            <td>NodeJS, Javascript (ES6), readline-sync, https (REST call to name-generator)</td>
+                            <td><a href="https://github.com/bnwilson/projects/tree/master/high-street-hospital">Github Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Fortune Teller</a></td>
+                            <td>Answer a series of questions and get your fortune read! The results are not always crystal clear.</td>
+                            <td>NodeJS, Javascript (ES6), readline-sync</td>
+                            <td><a href="https://github.com/bnwilson/projects/tree/master/fortune-teller">Github Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Guessing Game</td>
+                            <td>You get 3 tries to guess a number 1-10, if you don't guess the correct number in 3 tries you lose!</td>
+                            <td>NodeJS, Javascript (ES6), readline-sync</td>
+                            <td><a href="https://github.com/bnwilson/projects/tree/master/guessing-game">Github Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Move Mac Screenshots</td>
+                            <td>Script which moves my MacOS Desktop screenshots to a screenshot folder.</td>
+                            <td>Python</td>
+                            <td><a href="https://github.com/bnwilson/projects/tree/master/move-mac-screenshots">Github Link</a></td>
+                        </tr>
+                        
+
+                    </table>
+                </div>
+            </section>
+            
+            <!-- My Experiences -->
+            <section class="main__section-item">
+                <h2 id="Experience" class="main__section-title">My Experiences</h2>
+                <ul class="main__body-exp-list">
+                    <li>Utilized Python, Shell, and Orchestration to automate manual processes.</li>
+                    <li>Leveraged Apigee and cloud-agnostic Function As a Service to house serverless functions for automation and testing.</li>
+                    <li>Built ChatOps chatbot using Github's Hubot framework (NodeJS) with an adapter for Rocketchat.</li>
+                </ul>
+            </section>
+
+            <section class="main__section-item">
+                <h2 id="Contact" class="main__section-title">Contact Me</h2>
+                <h4 class="main__section-subtitle">Feel free to contact me with any questions, remarks, feedback or just to shoot the breeze!</h3>
+                <div class="main__body">
+                    <ul class="main__body-contact-list">
+                        <li><a href="mailto:bwilson.projects@gmail.com">bwilson.projects@gmail.com</a></li>
+                        <li><a href="https://linkedin.com/li/bnwilson">LinkedIn</a></li>
+                        <li><a href="https://github.com/bnwilson/brad-portfolio/issues">GitHub Issues</a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer"> 
+            Brad Wilson 2019 &copy; 
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap');
+/* font-family: 'Nothing You Could Do', cursive; */
+
+.about__content-wrapper {
+    margin-top: .5rem;
+}
+
+.about-button {
+    text-align: center;
+    cursor: pointer;
+    padding: .5rem 10px;
+    margin: 1px .5rem;
+    border-radius: 20% / 55%;
+    border: 3px outset rgba(185, 187, 216, 0.698);
+    background-color: rgb(20, 144, 20);
+    color: var(--off-white);
+    box-shadow: var(--light-shadow) 2px 2px 4px;
+}
+
+.about-button:hover {
+    background-color: rgba(3, 194, 3, 0.698);
+}
+
+.about-button:active {
+    box-shadow: none;
+    transform: translate(1px, 2px);
+}
+
+.about-header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: .5rem 0;
+    border-bottom: 2px solid var(--light-shadow);
+    background-color: hsl(2, 57%, 40%);
+    background-image: repeating-linear-gradient(transparent, 
+        transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+    repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+    repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+    background-repeat: space;
+    min-height: 2rem;
+}
+
+.about-hidden {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.5rem;
+    padding: .25rem 0 .3rem 2rem;
+    visibility: hidden;
+    opacity: 0;   
+}
+
+.about-hidden.toggle-hidden {
+    visibility: visible;
+    animation-name: about-list;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.about-list-avg {
+    margin: 5px;
+}
+
+.about-list-awesome {
+    margin: 2px;
+}
+
+.about-list--title {
+    font-family: 'Nothing You Could Do', cursive;
+    color: red;
+    font-weight: bold;
+    padding: .25rem 0 .3rem 3rem;
+}
+
+.about-me__subheader {
+    display: grid;
+    grid-template-columns: minmax(15vw, 1fr) minmax(15vw, 1.5fr);
+    gap: .25rem .4rem;
+    margin: 1rem 0;
+    padding: .4rem 0;
+}
+
+.about-me-wrapper {
+    background-color: var(--subheader-subheader-color);
+    box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
+    max-width: 70vw;
+    min-width: 530px;
+    margin: 0 auto;
+}
+
+/* About subheader */
+.about_text_greeting {
+    color: var(--bright-white2);
+    text-align: center;
+}
+
+.about_text {
+    color: var(--off-white);
+    text-align: center;
+    
+}
+
+.about_text-box {
+    margin-right: .4rem;
+    
+}
+
+/* .about_text-box {
+    align-content: center;
+    align-items: center;
+    background-color: var(--subheader-color);
+    box-shadow: var(--subheader-color-shadow) 3px 4px 3px;
+    display: flex;
+    justify-content: center;
+    margin-right: .4rem;
+    text-align: center;
+} */
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(40vh, auto);
+    /* grid-template-columns: 1fr 1fr; */
+    gap: .2rem .4rem;
+}
+
+.content_box *{
+    list-style: none;
+}
+
+.content_box ul li::before{
+    content: "-";
+    padding-right: .4rem;
+    text-indent: -5px;
+}
+
+/* .content_box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: var(--light-shadow) 2px 2px 3px 3px;
+    margin: .5rem .5rem;
+} */
+
+.content_box {
+    background-color: #fff;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+        linear-gradient(#eee .1em, transparent .1em);
+    background-size: 90% .98em;
+    background-position: -.5rem;
+    box-shadow: var(--light-shadow) 2px 2px 2px 4px;
+    margin: .5rem .5rem;
+}
+
+/* Animations */
+@keyframes about-list {
+    0%   {opacity: 0;}
+    15%  {opacity: .1;}
+    25%  {opacity: .2;}
+    45%  {opacity: .5;}
+    70%  {opacity: .75;}
+    100% {opacity: 1;}
+}

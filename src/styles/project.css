@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|PT+Mono|Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+/*  font-family: 'News Cycle', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'PT Mono', monospace; */
+
+.project-table {
+    color: black;
+    background-color: var(--table-color-1);
+    border-collapse: collapse;
+    border: 1px solid var(--off-white);
+    
+    font-family: 'Noto Sans', sans-serif;
+    /* padding: .5rem .5rem; */
+    margin: .5rem;
+}
+
+.project-table a:link {
+    color: blue;
+    font-weight: bold;
+    /* text-decoration: none; */
+}
+
+.project-table a:visited {
+    color: rgb(57, 43, 134);
+    font-weight: bold;
+}
+
+.project-table tr:nth-child(even) {
+    background-color: var(--table-color-2);
+}
+
+.project-table thead {
+    color: var(--off-white);
+    background-color: var(--table-color-3);
+}
+
+.project-table__caption {
+    text-align: center;
+    padding: 1rem 1rem;
+    margin: 2rem 4rem 1.5rem;
+    background-color: var(--subheader-subheader-color);
+    box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
+    color: var(--off-white)
+}
+
+.project-table__row {
+    margin: .25rem 0;
+}
+
+.project-table__row > * {
+    padding: .3rem .25rem;
+}
+
+.project-table__row-link {
+    height: 1rem;
+    width: 1rem;
+    color: var(--subheader-subheader-color);
+    padding: .2rem .2rem;
+}
+
+.icon-credit {
+    font-size: .6rem;
+    color: rgba(36, 30, 121, 0.5);
+    margin: 0 auto;
+    
+}
+
+.project-table__body {
+
+}
+
+.project-table__footer {
+
+}
+
+.project-table__header {
+
+}
