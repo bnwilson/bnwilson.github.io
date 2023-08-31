@@ -34,21 +34,29 @@ jobs:
         uses: actions/setup-node@v3.8.1
         with:
           node-version: 16
+      # Checkout repo
       - name: Checkout
         uses: actions/checkout@v3
+      # Pages setup
       - name: Setup Pages
         uses: actions/configure-pages@v3
+      # Install from lockfile
       - name: Install npm dependencies
         run: npm ci
         env:
-          CI: ""
+          CI: "" # process.env.CI = false
+      # Run build command
       - name: Build static files
         run: npm run build
+        env:
+          CI: "" # process.env.CI = false
+      # Upload build as artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # Upload 'build' folder
+          # Upload content in 'build' folder
           path: './build/*'
+      # Deploy
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
