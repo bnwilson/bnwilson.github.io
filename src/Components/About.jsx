@@ -29,7 +29,7 @@ function About (props) {
                     <span className="about_text-box">
                         <h2 className="about_text_greeting">Hello!</h2>
                         <p className="about_text">
-                            My name is Brad - I'm a full-stack Javascript developer 
+                            My name is Brad - I'm a full-stack Javascript / Typescript developer 
                             from Columbus, Ohio. This portfolio was created with React as a Single Page Application.
                             <br/>
                             <br/>
@@ -56,7 +56,7 @@ function About (props) {
                             <li className="about-hidden">Gamer</li>
                             <li className="about-hidden">Guitarist</li>
                             <li className="about-hidden">Tinkerer</li>
-                            <li className="about-hidden">Autuomater</li>
+                            <li className="about-hidden">Automater</li>
                             <li className="about-hidden">Tennis player</li>
                             
                         </ul>

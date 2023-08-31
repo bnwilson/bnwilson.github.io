@@ -7,12 +7,28 @@ module.exports = {
     projectItems: [        
         {
             title: "BLA Illustrations Website",
-            info: "(Work-in-progress) Website for Columbus-artist BLA Illustrations. Browse the Gallery for recent artwork, " +
+            info: "Website for Columbus-artist BLA Illustrations. Store integrates Shopify API and Hydrogen-React library. " +  
+                  "Browse the Gallery for recent artwork, " +
                   "submit a commission request, drop a line, or purchase BLA original stickers, portraits, decals, and drawings. " +
                   "Utilizes functions, server-side rendering, and Netlify CMS so the artist can update her content independently.",
-            tools: "ReactJS, NextJS, function, SendGrid (emails), Netlify, NetlifyCMS, reCaptcha, Responsive-design",
+            tools: "ReactJS, Next.js, FaaS, SendGrid (emails), Netlify, NetlifyCMS, reCaptcha, hydrogen-react, chakraUI, Shopify Storefront API, GraphQL",
             urlLink: "https://www.blaillustrations.com",
             urlText: "Website Link"
+        },
+        {
+            title: "BLA Illustrations (Source Code)",
+            info: "Github repo containing the source code for the site.  The repo is set up with webhooks to Netlify's CMS & CI/CD service. " + 
+                  "More info can be found in the README.md.",
+            tools: "ReactJS, Next.js, FaaS, webhooks, Typescript, SendGrid (emails), NetlifyCMS, reCaptcha (contact form), Shopify Storefront API, GraphQL",
+            urlLink: "https://github.com/bnwilson/blaillustrations",
+            urlText: "Github Link"
+        },
+        {
+            title: "Projects",
+            info: "Misc. projects & scripts written in variety of languages.",
+            tools: "javascript, python, typescript, bash, hubot (chatbot framework) - coffeescript",
+            urlLink: "https://github.com/bnwilson/projects",
+            urlText: "Github Link"
         },
         {
             title: "D&D Character Creator (Frontend)",
