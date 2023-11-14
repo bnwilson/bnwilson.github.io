@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/styles.css';
 import '../styles/project.css';
 import {ReactComponent as ExternalIcon} from '../img/external-link-symbol.svg';
+import { SectionTitle } from '../Components/sectionTitle';
 
 const ProjectData = require('../static/project-data');
 
@@ -9,6 +10,7 @@ const Projects = (props) => {
     return (
     < div className="main__content-wrapper">
         {props.children}
+        <SectionTitle title="Projects" />
         <p className="project-table__caption">
             {ProjectData.projectCaption}
         </p>
@@ -22,14 +24,14 @@ const Projects = (props) => {
             </thead>
             <tbody className="project-table__body">
                 {ProjectData.projectItems.map((project, i) => (
-                    <tr className="project-table__row">
+                    <tr className="project-table__row" key={i}>
                         <th>{project.title}</th>
                         <td>{project.info}</td>
                         <td>{project.tools}</td>
                         <td>
                             <a 
                                 rel="noopener noreferrer"
-                                dataIcon="external" 
+                                dataicon="external" 
                                 target="_blank"
                                 href={project.urlLink}
                             >

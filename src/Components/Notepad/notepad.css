@@ -1,0 +1,84 @@
+/* font-family: 'Nothing You Could Do', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap');
+
+.notepad_box {
+    background-color: #fff;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+        linear-gradient(#eee .1em, transparent .1em);
+    background-size: 90% .98em;
+    background-position: -.5rem;
+    box-shadow: var(--light-shadow) 2px 2px 2px 4px;
+    margin: .5rem .5rem;
+    min-width: 375px;
+    max-width: 45%;
+}
+
+@media screen and (max-width: 475px) {
+    .notepad_box{
+        width: 100%;
+        margin: 0 auto;
+        align-self: center;
+        justify-self: center;
+    } 
+}
+
+.notepad_binding {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: .5rem 0;
+    border-bottom: 2px solid var(--light-shadow);
+    background-color: hsl(2, 57%, 40%);
+    background-image: repeating-linear-gradient(transparent, 
+        transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+    repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+    repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+    background-repeat: space;
+    min-height: 2rem;
+}
+
+.notepad_list_wrapper {
+    margin: 5px;
+}
+
+.notepad_list_title {
+    font-family: 'Nothing You Could Do', cursive;
+    color: red;
+    font-weight: bold;
+    padding: .25rem 0 .3rem 3rem;
+}
+
+.notepad_list_items {
+    list-style: none;
+}
+
+.notepad_list_items li::before {
+    content: "-";
+    margin-right: .2rem;
+    text-indent: -5px
+}
+
+#notepad_list_item {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.5rem;
+    padding: .25rem 0 .3rem 2rem;
+    visibility: hidden;
+    opacity: 0;   
+}
+
+#notepad_list_item.reveal_list_item {
+    visibility: visible;
+    animation-name: notepad-list;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes notepad-list {
+    0%   {opacity: 0;}
+    15%  {opacity: .1;}
+    25%  {opacity: .2;}
+    45%  {opacity: .5;}
+    70%  {opacity: .75;}
+    100% {opacity: 1;}
+}

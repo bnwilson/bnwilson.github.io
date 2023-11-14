@@ -1,36 +1,42 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/styles.css';
-import About from './About';
-import Contact from './Contact';
-import Projects from './Projects';
-import Experience from './Experience';
+import About from '../pages/about';
+// import Contact from '../pages/contact';
+import Projects from '../pages/projects';
+import Home from '../pages/home';
+import { Experience } from '../pages/experience';
 
-const Title = ({title}) => {
-    return (
-        <h1 className="main__content-title">
-            {title}
-        </h1>
-    )
+/* Old - keeping for reference */
+/* const pageMap =  {
+    "about": (<About> <Title title="A Little About Me"/></About>),
+    "contact": (<Contact> <Title title="Contact Information"/></Contact>),
+    "projects": (<Projects> <Title title="My Projects"/></Projects>),
+    "experience": (<Experience> <Title title="My Experience"/></Experience>)
+} */
+
+const pageMap = {
+    "home":       <Home />,
+    "about":      <About />,
+    "experience": <Experience />,
+    "projects":   <Projects />
 }
 
-const MainContent = ({appContentKey}) => {
-    const [content, setData] = useState('');
+const MainContent = ({appContentKey=""}) => {
+    const [mainContentKey, setMainContentKey] = useState('');
     
     useEffect(() => {
-
-        let apps =  {
-            "about": (<About> <Title title="A Little About Me"/></About>),
-            "contact": (<Contact> <Title title="Contact Information"/></Contact>),
-            "projects": (<Projects> <Title title="My Projects"/></Projects>),
-            "experience": (<Experience> <Title title="My Experience"/></Experience>)
+        if (appContentKey && Object.keys(pageMap).includes(appContentKey)) {
+            setMainContentKey(appContentKey)
+        } else {
+            setMainContentKey("home")
         }
-        setData(apps[appContentKey])
     }, [appContentKey])
-    
+
+        
     return (
-        <div className="main__content">
-            {content}
-        </div>
+        <main className="main__content">
+            {pageMap[mainContentKey] || <span>No content can be rendered</span> }
+        </main>
     )
 }
 

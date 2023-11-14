@@ -1,3 +1,150 @@
+/* Main - navbar styling */
+.main_navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1 2;
+    min-width: 95%;
+    max-width: 100vw;
+    margin: 0;
+    padding: .05rem 0.1rem;
+
+}
+/* Title & Subtitle container */
+.main_navbar__title_box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 3px 0;
+}
+
+.main_navbar__title {
+    /* font-size: 1.25rem; */
+    font-size: calc(1rem + 1vmin);
+    font-family: 'Bruno Ace SC', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.main_navbar__subtitle {
+    color: darkred;
+    /* font-size: .75rem; */
+    font-size: calc(.45rem + 1vmin);
+    font-family: 'Sarpanch', sans-serif;
+    letter-spacing: 0.1em;
+    text-wrap: nowrap; 
+    text-align: left;
+    padding-left: .15rem;
+    word-wrap: normal;
+}
+
+.main_navbar__navmenu {
+    overflow: hidden;
+    /* flex-grow: 2; */
+}
+
+.main_navbar__navmenu .nav_icon {
+    display: none;
+}
+
+.main_navbar__navlink {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, .0);
+    border-bottom-width: 0%;
+    color: var(--dark-gray);
+    font-family: 'Rum Raisin', sans-serif;;
+    /* font-family: 'PT Mono', monospace; */
+    font-size: 1rem;
+    font-size:calc(12px + .5vw);
+    font-weight: lighter;
+    letter-spacing: 2px;
+    outline: none;
+    padding: 2px 10px;
+    transition-property: border-bottom, width;
+    transition-duration: .6s;
+}
+
+.main_navbar__navlink.navbar_button__active {
+    color: rgba(170, 162, 10, 0.8);
+    border-bottom: 2px groove rgba(52, 73, 120, 0.4);
+    ;
+}
+
+.main_navbar__navlink:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgba(86, 81, 77, 0.7);
+    color: var(--subheader-subheader-color);
+}
+
+.main_navbar__navmenu ul {
+    display: flex;
+    align-self: center;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+@media screen and (max-width:550px) {
+    .main_navbar__navlink {display: none;};
+    .main_navbar__navmenu .nav_icon {
+        color: var(--header-color);
+        display: block;
+        float: right;
+        margin: .15rem .25rem;
+        padding: .1rem;
+        font-size: 1.5rem;
+    };
+    .main_navbar__navmenu .nav_icon:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 1px 2px var(--box-shadow-2);
+    }
+    
+}
+
+@media screen and (max-width:550px) {
+    /* Nav menu - expanded (responsive) */
+    .main_navbar__navmenu.responsive {
+        padding-right: 1.25rem;
+        z-index: 2;
+        ul {
+            border-radius: 8px;
+            background-color: rgba(76, 197, 88, 0.146);
+            box-shadow: 2px 4px var(--box-shadow-2);
+            flex-direction: column;
+            margin-right: 0.25rem;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: .15rem;
+            position: relative;
+            /* right: 10px; */
+        }
+        
+    }
+    .main_navbar__navmenu.responsive .main_navbar__navlink:hover {
+        background-color: rgba(76,104,197,0.35);
+    }
+    .main_navbar__navmenu.responsive .nav_icon {
+        border: 1px groove rgba(19, 37, 139, 0.452);
+        
+        border-radius: 1.5rem;
+        position: absolute;
+        background-color: rgba(250, 250, 255, 0.4);
+        right: 0;
+        top: 0;
+        z-index: 3;
+    }
+    .main_navbar__navmenu.responsive .main_navbar__navlink {
+        float: none;
+        display: block;
+        text-align: center;
+        padding: 3px .6rem;
+        /* padding-left: .55rem;
+        padding-right: .55rem; */
+        
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -28,7 +175,6 @@
 }
 
 /* Navbar Dropdown styling */
-
 .header__navbar-dropdown, 
 .header__navbar-button,
 .header__navbar-dropdown>ul {
@@ -104,7 +250,7 @@
 .main__content {
     width: 95%;
     margin: 0 auto;
-    padding-top: .5rem;
+    padding-top: .25rem;
 }
 
 .main__content__about-box {
@@ -130,6 +276,27 @@
 
 .main__content__about-box-list__subtitle {
     text-align: center;
+}
+
+/* Section divider (with text) */
+.main_content__divider_title {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Rum Raisin', sans-serif;
+    font-weight:normal;
+    gap: 1rem;
+    opacity: .5;
+}
+
+.main_content__divider_title::before, 
+.main_content__divider_title::after {
+    flex: 1;
+    content: '';
+    padding: 2px;
+    background-color: var(--dark-gray);
+    opacity: .8;
+    margin: 2.25rem 1rem;
 }
 
 .main__content-title {

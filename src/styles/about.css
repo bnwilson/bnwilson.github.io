@@ -80,6 +80,7 @@
 }
 
 .about-me-wrapper {
+
     background-color: var(--subheader-subheader-color);
     box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
     max-width: 70vw;
@@ -116,11 +117,26 @@
 } */
 
 .about-wrapper {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(40vh, auto);
+    grid-template-rows: minmax(40vh, auto); */
     /* grid-template-columns: 1fr 1fr; */
-    gap: .2rem .4rem;
+    /* gap: .2rem .4rem; */
+}
+
+@media screen and (max-width: 425px) {
+    .about-wrapper {
+        flex-direction: column;
+        align-content: center;
+        gap: 1rem;
+    }
 }
 
 .content_box *{

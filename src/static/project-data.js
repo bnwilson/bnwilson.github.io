@@ -4,7 +4,15 @@ module.exports = {
     projectHeaders: [
         "Project Name", "Description", "Tools Used", "Link"
     ],
-    projectItems: [        
+    projectItems: [
+        {
+            title: "Portfolio (Source Code)",
+            info: "Github repo containing the source code for this portfolio page.  " + 
+                  "The SPA is built & bundled as a static page; configured/hosted via Github Pages.",
+            tools: "ReactJS, webpack, babel, Node.js, npm, Github Pages",
+            urlLink: "https://github.com/bnwilson/bnwilson.github.io",
+            urlText: "Github Link"
+        },
         {
             title: "BLA Illustrations Website",
             info: "Website for Columbus-artist BLA Illustrations. Store integrates Shopify API and Hydrogen-React library. " +  
@@ -17,7 +25,8 @@ module.exports = {
         },
         {
             title: "BLA Illustrations (Source Code)",
-            info: "Github repo containing the source code for the site.  The repo is set up with webhooks to Netlify's CMS & CI/CD service. " + 
+            info: "Github repo containing the source code for the site.  " + 
+                  "The repo is set up with webhooks to Netlify's CMS & CI/CD service. " + 
                   "More info can be found in the README.md.",
             tools: "ReactJS, Next.js, FaaS, webhooks, Typescript, SendGrid (emails), NetlifyCMS, reCaptcha (contact form), Shopify Storefront API, GraphQL",
             urlLink: "https://github.com/bnwilson/blaillustrations",

@@ -1,8 +1,7 @@
 import React from 'react';
-import Image from '../img/brad_professional.gif';
-import '../styles/styles.css';
+import Image from '../../img/brad_professional.gif';
 
-function Logo() {
+export function Logo() {
     return (
         <div style={{margin: "0 auto"}}>
             <a
@@ -14,5 +13,3 @@ function Logo() {
         </div>
     )
 }
-
-export default Logo;

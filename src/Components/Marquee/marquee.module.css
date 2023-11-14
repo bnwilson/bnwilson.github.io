@@ -1,0 +1,48 @@
+/* 'Pixelify_Sans variant0, 'Pixelify Sans Regular' 
+    font-family: 'Pixelify Sans', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+
+.marquee {
+    /* Variable -- gap - globalizing gap value of columns/rows */
+    --gap: 1rem;
+    --marquee-font-family: 'Pixelify Sans', sans-serif;
+    display: flex;
+    overflow: hidden;  /* conceal elements snapping back to start positions */
+    user-select: none; /* prevent user selection of marquee text or content */
+    gap: var(--gap);
+}
+
+.marquee_content {
+    flex-shrink: 0; /* prevent child container from shrinking & overlapping */
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+}
+
+/* Pause on hover */
+.marquee__hover_pause:hover .marquee_content {
+    animation-play-state: paused;
+}
+
+/* Pause when 'reduced-motion' is set */
+@media (prefers-reducted-motion: reduce) {
+    .marquee_content {
+        animation-play-state: paused !important;
+    }
+}
+
+.enable-animation .marquee_content {
+    animation: marquee-scroll 10s linear infinite;
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
