@@ -39,15 +39,30 @@
 
 .project-table__caption {
     text-align: center;
-    padding: 1rem 1rem;
-    margin: 2rem 4rem 1.5rem;
-    background-color: var(--subheader-subheader-color);
+    padding: 1rem 2rem;
+    margin: 0 auto 1rem;
+    /* background-color: var(--off-white-2); */
     box-shadow: var(--subheader-subheader-color-shadow) 2px 2px 3px 4px;
-    color: var(--off-white)
+    color: var(--dark-gray-opaque);
+    font-size: 1.25rem;
+    font-family: 'Rum Raisin', sans-serif;
 }
 
 .project-table__row {
     margin: .25rem 0;
+}
+
+.project-table__row td:nth-child(1) {
+    font-size: calc(13px + .5vw);
+    text-align: left;
+}
+.project-table__row td:nth-child(2) {
+    font-size: calc(12px + .5vw);
+}
+
+.project-table__row td:nth-child(3) {
+    font-size: calc(11px + .5vw);
+    font-family: 'PT Mono', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .project-table__row > * {
@@ -68,7 +83,7 @@
     
 }
 
-.project-table__body {
+/* .project-table__body {
 
 }
 
@@ -78,4 +93,4 @@
 
 .project-table__header {
 
-}
+} */

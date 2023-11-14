@@ -1,7 +1,13 @@
 import React from 'react';
 import '../styles/styles.css';
 
-class Dropdown extends React.Component {
+/**
+ * `Dropdown` - _class_ - class-based attempt at creating a dropdown menu for nav
+ * @class
+ * @constructor `props`
+ * 
+ */
+export class Dropdown extends React.Component {
     // props: 
     //    'title'       <string>   -> title of default selection; defaults to '-- Selection --'
     //    'navCallback' <function> -> callback to handle click event for each item in dropdown
@@ -44,7 +50,7 @@ class Dropdown extends React.Component {
                 </div>
                 { this.state.displayMenu ? (
                     <ul>
-                        {this.props.items && this.props.items.map((item, index) =(
+                        {this.props.items && this.props.items.map((item, index) => (
                             <li>
                                 <a className="active" 
                                 key={index}
@@ -64,5 +70,3 @@ class Dropdown extends React.Component {
         )
     }
 }
-
-export default Dropdown;

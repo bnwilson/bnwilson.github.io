@@ -1,49 +1,58 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import './App.css';
-import {Header, Title} from './Components/Header';
-import Nav from './Components/Nav';
+
 import MainContent from './Components/MainContent';
+import { siteNavMap } from './static/site-nav-map';
+import {NavContext} from './Components/nav.context';
+//import { Navbar } from './Components/Nav/Navbar';
+import { NavLinks, Navbar } from './Components/Nav';
 
 
+const activateNavByValue = (navActiveKey) => {
+  //const navItems = document.querySelectorAll('.main_navbar__navlink');
+  const navItems = document.querySelectorAll(`[data-navkey=${navActiveKey}]`)
+  const navItem = navItems[0]
+  navItem && 
+    navItem.classList.toggle('navbar_button__active');
+}
 
+const validContentKeys = siteNavMap.map(navItem => navItem.value)
 
 function App() {
-  const home = "about"
-  const [main, setMain] = useState(home)
+  const home = siteNavMap[0].value;
+  const [siteContentKey, setSiteContentKey] = useState('');
+  
+  useEffect(() => { setSiteContentKey(home)},[home]);
 
-  const activateNavByValue = (navHomeKey) => {
-    const navItems = document.querySelectorAll('.navbar_button');
-    const navItemList = {
-      "about": navItems[0],
-      "experience": navItems[1],
-      "projects": navItems[2],
-      "contact": navItems[3]
-    }
-    navItems ? navItemList[navHomeKey].classList.toggle('navbar_button__active') : console.log(navItemList)
-  }
-  useEffect(() => { activateNavByValue(home)},[home]);
-
-  const mainHeader = (
-    <Header>
-      <Title />
-      <Nav props={handleNavClick} />
-    </Header>
-  )   
-
+  /** `handleNavClick` - `onClick` callback for handling 'active' links and page content
+   * @name handleNavClick
+   * @param {React.MouseEvent<HTMLLIElement>} event 
+   */
   function handleNavClick (event) {
-    event.preventDefault();
-    let mainContentKey = event.currentTarget.getAttribute('value');
-    let prevNav = document.querySelector('.navbar_button__active');
-    prevNav && 
-      prevNav.classList.toggle('navbar_button__active');
-    event.currentTarget.classList.toggle('navbar_button__active');
-    setMain(mainContentKey);
+    // event.preventDefault();
+    const mainContentKey = event.currentTarget.dataset['navLink'] //('data-navkey');
+    
+    console.log('mainContentKey: >> ', mainContentKey)
+    // let prevNav = document.querySelector('navbar_button__active');
+    // prevNav && 
+    //   prevNav.classList.toggle('navbar_button__active');
+    // event.currentTarget.classList.toggle('navbar_button__active');
+    if (mainContentKey && mainContentKey !== siteContentKey && validContentKeys.includes(mainContentKey)){
+      setSiteContentKey(mainContentKey);
+    }
   }
+
+  const handleNavClickCallback = useCallback(handleNavClick,[siteContentKey]);
+
 
   return (
     <div>
-      {mainHeader}
-      <MainContent mainTitle="Bradley" appContentKey={main} />
+      <NavContext.Provider value={siteContentKey} >
+        <Navbar >
+          <NavLinks onclick={handleNavClick} />
+        </Navbar>
+        <MainContent appContentKey={siteContentKey} />
+      </NavContext.Provider>
     </div>
   );
 }

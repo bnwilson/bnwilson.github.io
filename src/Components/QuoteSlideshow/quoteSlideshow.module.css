@@ -1,0 +1,73 @@
+.slideshow_container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+
+.quote_slide {
+    display: none;
+    padding: 4rem;
+    text-align: center;
+}
+
+.quote_slide.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -1.5rem;
+    padding: .9rem;
+    color: #888;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(51, 48, 107, 0.591);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot_container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.dot.active, .dot:hover {
+    background-color: #717171;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+.author {
+color: rgba(12,15,120,.9);
+}

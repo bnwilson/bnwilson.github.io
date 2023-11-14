@@ -1,28 +1,21 @@
 import React from 'react';
+ 
+const navContentDefault = [
+    {value: "home", title: "Home"},
+    {value: "experience", title: "Experience"},
+    {value: "projects", title: "Projects"},
+    {value: "about", title: "About"}
+]
 
-
-function Nav({props}) {
-    let navContent = [
-        {
-            value: "about", title: "About"
-        },
-        {
-            value: "experience", title: "Experience"
-        },
-        {
-            value: "projects", title: "Projects"
-        },
-        {
-            value: "contact", title: "Contact"
-        }
-    ]
+export function Nav(props) {
+ 
 
     return (
         <nav className="header__navbar">
             {
                 props.children ? props.children : 
                 <ul className="navbar_list">
-                    {navContent.map((item, index) => {
+                    {navContentDefault.map((item, index) => {
                         return (<li 
                                 className="navbar_list-item"
                                 key={index}
@@ -42,5 +35,3 @@ function Nav({props}) {
         </nav>
     )
 }
-
-export default Nav;
