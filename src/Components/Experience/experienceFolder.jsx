@@ -1,5 +1,5 @@
 import React from "react";
-import { ExperienceCard } from "./experienceCard"
+import { ExperienceCard } from "./experienceCard";
 /**
  * 
  * @param {{"title": string, "label": string, "experience": string[]}[]} props 
@@ -9,7 +9,7 @@ export const ExperienceFolder = (props={title:"",label:"",experience:[""]}) => {
     const {title, label, experience} = props;
     // experience: <Array> :: title: <string>
     return (
-        <div className="experience_text">
+        <div className="experience_content">
             <h2 className="experience_header">
                 {title}
             </h2>

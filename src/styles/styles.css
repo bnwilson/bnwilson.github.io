@@ -285,6 +285,7 @@
     align-items: center;
     font-family: 'Rum Raisin', sans-serif;
     font-weight:normal;
+    letter-spacing: .4vw;
     gap: 1rem;
     opacity: .5;
 }

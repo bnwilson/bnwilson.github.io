@@ -28,7 +28,7 @@ const Projects = (props) => {
                         <th>{project.title}</th>
                         <td>{project.info}</td>
                         <td>{project.tools}</td>
-                        <td>
+                        <td className='project-table__row-link'>
                             <a 
                                 rel="noopener noreferrer"
                                 dataicon="external" 
@@ -36,7 +36,7 @@ const Projects = (props) => {
                                 href={project.urlLink}
                             >
                                 {project.urlText}
-                                <ExternalIcon fill="rgba(23, 56, 66, 0.739)" className="project-table__row-link" />
+                                <ExternalIcon fill="rgba(23, 56, 66, 0.739)" className="project-table__row-link_icon" />
                             </a>
                             
                         </td>
