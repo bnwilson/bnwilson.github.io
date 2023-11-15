@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import '../styles/exp.css';
 import {experienceSections} from '../static/experience-sections'
 import { ExperienceFolder } from '../Components/Experience';
+import { SectionTitle } from '../Components/sectionTitle';
 // {/* <img className="experience_arrow" src={Arrow} alt={""}></img> */}
 
 export const Experience = (props) => {
@@ -18,6 +19,7 @@ export const Experience = (props) => {
     return (
         <div className="experience-wrapper">
             {/* Header */}
+            <SectionTitle title="Experiences" />
             {props.children}
             <div className="experience_tabs">
                 {sectionItems.map((item, index) => (

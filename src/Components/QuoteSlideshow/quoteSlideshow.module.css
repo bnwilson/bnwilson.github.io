@@ -24,6 +24,7 @@
     font-weight: bold;
     font-size: 1rem;
     border-radius: 0 3px 3px 0;
+    opacity: 0.3;
     user-select: none;
 
 }
@@ -35,8 +36,9 @@
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(51, 48, 107, 0.591);
+    /* background-color: rgba(51, 48, 107, 0.591); */
     color: white;
+    opacity: 0.9;
 }
 
 /* The dot/bullet/indicator container */

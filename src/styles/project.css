@@ -49,7 +49,11 @@
 }
 
 .project-table__row {
-    margin: .25rem 0;
+    margin: .15rem 0;
+}
+
+.project-table__body th {
+    font-size: calc(14px + .5vw);
 }
 
 .project-table__row td:nth-child(1) {
@@ -66,14 +70,22 @@
 }
 
 .project-table__row > * {
-    padding: .3rem .25rem;
+    padding: .2rem .2rem;
 }
 
 .project-table__row-link {
-    height: 1rem;
-    width: 1rem;
+    text-align: left;
+
+}
+
+.project-table__row-link_icon {
+    /* height: 1rem; */
+    height: calc(.5rem + .5vw);
+    width: calc(.5rem + .5vw);
+    /* width: 1rem; */
+    /* float: right; */
     color: var(--subheader-subheader-color);
-    padding: .2rem .2rem;
+    padding: .1rem .2rem;
 }
 
 .icon-credit {

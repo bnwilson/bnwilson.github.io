@@ -8,8 +8,8 @@ export const aboutNotepadContent = [
                 "eager to learn something new",
                 "adaptive to new technology trends",
                 "humble",
-                "one of the best and smartest without a doubt",
-                "sarcastic, light-hearted, & easy-going"
+                "one of the best and smartest",
+                "dry-humored, light-hearted, & easy-going"
             ]
         }
     },
@@ -17,13 +17,13 @@ export const aboutNotepadContent = [
         "contentName": "Interests",
         "contentDescription": "Hobbies and interests",
         "notepadContent": {
-            "notepadTitle": "I my spare time, I am . . .",
+            "notepadTitle": "In my spare time, I am . . .",
             "notepadList": [
-                "building front-end apps",
-                "writing python or bash scripts",
-                "  gaming (PC and PS5)",
-                "volleying in tennis or pickleball",
-                " humbling people in table-tennis",
+                "seeking out coding & DIY projects",
+                " reading (sci-fi, fantasy, history)",
+                "  gaming (PC & PS5)",
+                " jamming w/ guitar or cello",
+                "watching basketball",
                 " getting humbled on the golf course"
             ]
         }

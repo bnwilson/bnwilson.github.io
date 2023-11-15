@@ -14,8 +14,8 @@ export const experienceSections = [
         title: "Front-End Experience",
         label: "Frontend",
         experience: [
-            "ReactJS", "HTML5/CSS3 (Flex/Grid)", "Javascript (2015, ES6+)", "TypeScript", "Webpack (bundling, config, context, and utilizing builders)",
-            "NextJS", "vite", "Handlebars", "JAM Stack", "MERN Stack"
+            "React", "HTML5/CSS3 (Flex/Grid)", "Javascript (2015, ES6+)", "TypeScript", "Webpack (bundling, config, context, and utilizing builders)",
+            "NextJS", "vite", "Handlebars", "JAM Stack"
         ]
     },
     {
@@ -25,18 +25,19 @@ export const experienceSections = [
             "NodeJS", "ExpressJS", "Python 2.7 & Python 3+", "Model View Controller (MVC) Framework",
             "Sequelize (ORM) for MySQL", "Mongoose for MongoDB", "GraphQL", "Shopify", "bash/shell scripting",
             "Urban Code Deploy", "Github", "Gitlab",
-            "Converted server-side house-keeping scripts to serverless functions, bundles/versioned as packages in local registry"
+            "Building automated housekeeping"
         ]
     },
     {
-        title: "DevOps",
-        label: "DevOps Experience",
+        title: "DevOps Experience",
+        label: "DevOps",
         experience: [
             "Containerization with Docker, Kubernetes, and helm.",
             "Utilizing Function As A Service (FaaS) in a hosting and enterprise environment.",
             "Experience using AWS EC2, Lambda, and S3 Buckets.",
             "Building ChatOps bots to streamline deployment administration and configuration.",
-            "Maintained and configured a custom Gitlab CI/CD pipeline for automation projects. "
+            "Maintained and configured a custom Gitlab CI/CD pipeline for automation projects. ",
+            "Converted server-side house-keeping scripts to serverless functions, bundles/versioned as packages in local registry"
         ]
     }
 ]
