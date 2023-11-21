@@ -1,63 +1,70 @@
 .slideshow_container {
     position: relative;
     background: #f1f1f1f1;
+    border-radius: 2rem;
+    /* height: fit-content; */
 }
 
 .quote_slide {
     display: none;
-    padding: 4rem;
+    padding: calc(10px + 2vmin);
     text-align: center;
+    height: 4rem;
 }
 
 .quote_slide.active {
     display: block;
+    /* overflow: auto; */
+    color: #7f2c2c;
 }
 
 .prev, .next {
+    background-color: rgba(165, 167, 184, 0.056);
+    box-shadow: rgba(5,5,5,.1);
+    border-radius: .5rem;
+    border:unset;
+    color: #552b46;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -1.5rem;
-    padding: .9rem;
-    color: #888;
     font-weight: bold;
     font-size: 1rem;
-    border-radius: 0 3px 3px 0;
-    opacity: 0.3;
+    margin-top: -1.5rem;
+    opacity: 0.4;
+    padding: .9rem;
+    position: absolute;
+    top: 50%;
     user-select: none;
-
+    width: auto;
 }
 
 .next {
     position: absolute;
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
     /* background-color: rgba(51, 48, 107, 0.591); */
-    color: white;
+    color: rgb(71, 61, 61);
     opacity: 0.9;
 }
 
 /* The dot/bullet/indicator container */
 .dot_container {
     text-align: center;
-    padding: 20px;
-    background: #ddd;
+    padding: 10px;
+    background: #dddddd9e;
+    border-radius: 0 0 2rem 2rem;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 1rem;
-  width: 1rem;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 /* Add a background color to the active dot/circle */
@@ -67,9 +74,29 @@
 
 .quote {
     font-style: italic;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .author {
-color: rgba(12,15,120,.9);
+    color: rgba(12,15,120,.9);
+    letter-spacing: 1px;
+    
+}
+
+@media screen and (max-width: 450px) {
+    .slideshow_container {
+        border-radius: 1.25rem;
+    }
+    .dot_container {
+        border-radius: 0 0 1.25rem 1.25rem;
+    }
+    .prev, .next {
+        padding: .6rem;
+    }
+    .quote {
+        font-size: 1rem;
+    }
+    .author {
+        font-size: .8rem;
+    }
 }

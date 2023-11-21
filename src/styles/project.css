@@ -14,7 +14,13 @@
     
     font-family: 'Noto Sans', sans-serif;
     /* padding: .5rem .5rem; */
-    margin: .5rem;
+    margin: .15rem;
+}
+
+@media screen and (max-width: 400px) {
+    .project-table {
+        max-width: 100%;
+    }
 }
 
 .project-table a:link {
@@ -34,7 +40,8 @@
 
 .project-table thead {
     color: var(--off-white);
-    background-color: var(--table-color-3);
+    background-color: var(--sexy-orange);
+    font-size: calc(15px + .4vw);
 }
 
 .project-table__caption {
@@ -53,15 +60,15 @@
 }
 
 .project-table__body th {
-    font-size: calc(14px + .5vw);
+    font-size: calc(12px + .4vw);
 }
 
 .project-table__row td:nth-child(1) {
-    font-size: calc(13px + .5vw);
+    font-size: calc(13px + .4vw);
     text-align: left;
 }
 .project-table__row td:nth-child(2) {
-    font-size: calc(12px + .5vw);
+    font-size: calc(12px + .4vw);
 }
 
 .project-table__row td:nth-child(3) {
@@ -75,6 +82,7 @@
 
 .project-table__row-link {
     text-align: left;
+    font-size: calc(12px + .5vw);
 
 }
 
@@ -89,10 +97,10 @@
 }
 
 .icon-credit {
-    font-size: .6rem;
+    font-size: calc(9px + .5vw);
     color: rgba(36, 30, 121, 0.5);
     margin: 0 auto;
-    
+    text-align: center;
 }
 
 /* .project-table__body {

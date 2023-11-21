@@ -48,17 +48,17 @@ export function QuoteSlideshow (props={quotes: [{author:"", quote:""}],customDel
                     <p className={styles.author} >- {q.author}</p>
                 </div>
             ))}
+            <div className={styles.dot_container} >
+                {quotes.map((_,indx) => 
+                    <span 
+                        className={`${styles.dot}${indx === currentSlide ? ' '+styles.active : ""}`} 
+                        onClick={() => setCurrentSlide(indx)}
+                        key={indx}
+                    />
+                )}
+            </div>
             <button className={styles.prev} onClick={prevSlide}>&lt;</button>
             <button className={styles.next} onClick={nextSlide}>&gt;</button>
-        </div>
-        <div className={styles.dot_container} >
-            {quotes.map((_,indx) => 
-                <span 
-                    className={`${styles.dot}${indx === currentSlide ? ' '+styles.active : ""}`} 
-                    onClick={() => setCurrentSlide(indx)}
-                    key={indx}
-                />
-            )}
         </div>
     </>
     )

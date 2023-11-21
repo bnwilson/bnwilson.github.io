@@ -2,8 +2,7 @@
 export const homePeopleFeedback = [
     {
         "author": "ChatGPT",
-        "quote": "I'm sorry, I cannot answer: 'why is Brad Wilson the best' " +
-            "as that would be disingenuous."
+        "quote": "I'm sorry, I cannot answer: 'why is Brad Wilson the best'."
     },
     {
         "author": "My Mother",
