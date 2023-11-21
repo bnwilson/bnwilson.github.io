@@ -26,14 +26,15 @@ html {
   --dark-gray: #27242b9d;
   --dark-gray-opaque: rgba(67, 67, 67, 0.7);
   --header-color: rgb(26, 89, 109);
-  --header-color-shadow: rgb(11, 55, 68);
+  --header-color-shadow: rgb(11, 55, 68); /* Rella - void-kitty */
   --off-white: #e5e5e5;
   --off-white-2: #F5EDED;
   --off-white-3: ghostwhite;
   --bright-white: #91fdac;
   --bright-white2: #bef1fa;
   --light-gray: #a7dbd2c0;
-  --light-shadow: #191b1b63;
+  --light-shadow: #191b1b63; 
+  --sexy-orange: rgba(181, 68, 0, 0.93); /* Brittany-certified color */
   --subheader-color: rgba(90, 176, 219, 0.966);
   --subheader-color-shadow: rgba(23, 56, 66, 0.739);
   --subheader-subheader-color: rgba(55, 111, 139, 0.685);

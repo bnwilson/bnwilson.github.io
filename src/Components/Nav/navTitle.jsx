@@ -1,13 +1,4 @@
 import React from "react";
-const navTitleContainerStyling = {
-    "display": "flex",
-    "flexDirection": "column"
-}
-
-const navTitleStyling = {
-    "fontSize": "18px"
-
-}
 
 /**
  * Note:  class styling currently in `src/styles/styles.css`

@@ -10,8 +10,15 @@
     background-position: -.5rem;
     box-shadow: var(--light-shadow) 2px 2px 2px 4px;
     margin: .5rem .5rem;
+    /* min-height: 550px; */
+    min-height: calc(40vh + 25vw);
     min-width: 375px;
     max-width: 45%;
+    --bind-clr-1: hsl(204, 52%, 30%);
+    --bind-clr-2: rgba(4, 4, 61, 0.4);      /* rgba(0,0,0,.4)       */
+    --bind-clr-3: rgba(132, 143, 31, 0.5);   /* rgba(0,0,0,.5)       */
+    --bind-clr-4: rgba(90, 90, 35, 0.2); /* rgba(255,255,255,.2) */
+    --bind-clr-5: rgba(97, 17, 97, 0.2);           /* rgba(0,0,0,.2)       */
 }
 
 @media screen and (max-width: 475px) {
@@ -29,11 +36,24 @@
     align-content: center;
     padding: .5rem 0;
     border-bottom: 2px solid var(--light-shadow);
-    background-color: hsl(2, 57%, 40%);
-    background-image: repeating-linear-gradient(transparent, 
-        transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-    repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-    repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+    background-color: var(--bind-clr-1);
+    background-image: 
+        repeating-linear-gradient(
+            transparent, transparent 50px, var(--bind-clr-2) 50px, var(--bind-clr-2) 53px, transparent 53px, transparent 63px, 
+            var(--bind-clr-2) 63px, var(--bind-clr-2) 66px, transparent 66px, transparent 116px, var(--bind-clr-3) 116px, 
+            var(--bind-clr-3) 166px, var(--bind-clr-4) 166px, var(--bind-clr-4) 169px, var(--bind-clr-3) 169px, 
+            var(--bind-clr-3) 179px, var(--bind-clr-4) 179px, var(--bind-clr-4) 182px, var(--bind-clr-3) 182px, 
+            var(--bind-clr-3) 232px, transparent 232px),
+        repeating-linear-gradient(
+            270deg, transparent, transparent 50px, var(--bind-clr-2) 50px, 
+            var(--bind-clr-2) 53px, transparent 53px, transparent 63px, var(--bind-clr-2) 63px, 
+            var(--bind-clr-2) 66px, transparent 66px, transparent 116px, var(--bind-clr-3) 116px, 
+            var(--bind-clr-3) 166px, var(--bind-clr-4) 166px, var(--bind-clr-4) 169px, 
+            var(--bind-clr-3) 169px, var(--bind-clr-3) 179px, var(--bind-clr-4) 179px, 
+            var(--bind-clr-4) 182px, var(--bind-clr-3) 182px, var(--bind-clr-3) 232px, transparent 232px),
+        repeating-linear-gradient(
+            125deg, transparent, transparent 2px, var(--bind-clr-5) 2px, 
+            var(--bind-clr-5) 3px, transparent 3px, transparent 5px, var(--bind-clr-5) 5px);
     background-repeat: space;
     min-height: 2rem;
 }
@@ -51,6 +71,7 @@
 
 .notepad_list_items {
     list-style: none;
+    line-height: 2rem;
 }
 
 .notepad_list_items li::before {
@@ -81,4 +102,11 @@
     45%  {opacity: .5;}
     70%  {opacity: .75;}
     100% {opacity: 1;}
+}
+
+@media screen and (max-width: 450px) {
+    .notepad_list_items {
+        line-height: calc(.75rem + 2vw);
+
+    }
 }
