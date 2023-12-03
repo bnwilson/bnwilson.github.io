@@ -1,0 +1,110 @@
+/* Table | Container */
+.projects-table__container {
+    /* border: 1px solid rgba(74,81,95,0.85); */
+    /* border-radius: 12px; */
+    display: block;
+    max-width: 100%;
+    overflow: auto hidden;
+    overflow-wrap: normal;
+}
+
+.projects-table__container>table {
+    border-radius: 12px;
+    border-collapse: collapse;
+    display: block;
+    max-width: 100%;
+}
+
+/* Caption */
+.table__caption {
+    caption-side: top;
+    font-family: 'Rum Raisin', sans-serif;
+    opacity: 0.7;
+    padding-bottom: 0.75rem;
+    padding-inline: 1.5rem;
+    padding-top: 0.25rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Head */
+.projects-table__thead {
+    color: #296164;
+    font-size: calc(8px + 1vmin);
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.projects-table__th {
+    font-size: calc(10px + .75vmin);
+    text-align: left;
+    padding: 0 0 .25rem .25rem;
+}
+
+/* Body */
+.projects-table__tbody tr {
+    border-top: 1px solid rgba(74, 81, 95, 0.501);
+    font-weight: 500;
+}
+
+/* Row | Column | Cell selectors */
+.projects-table__row {
+    font-size: 0.9rem;
+    margin: 0.1rem;
+}
+
+.project-table__row-td {
+    border-top: 1px solid slategray;
+    padding: .35rem .1rem;
+}
+
+#col__name {
+    font-weight: 600;
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Nothing You Could Do', sans-serif; */
+    /* font-family: 'Bruno Ace SC', sans-serif; */
+    /* font-family: 'Sarpanch', sans-serif; */
+    font-size: calc(10px + 0.5vw);
+    padding: 0 .25px;
+    text-align: left;
+}
+
+#col__desc {
+    font-family: 'News Cycle', sans-serif;
+    font-size: calc(10px + 0.5vw);
+}
+
+#col__tools {
+    font-family: 'PT Mono', monospace;
+    font-size: calc(10px + 0.5vw);
+    font-family: 'PT Mono', system-ui, 
+        -apple-system, BlinkMacSystemFont, 
+        'Segoe UI', Roboto, Oxygen, Ubuntu, 
+        Cantarell, 'Open Sans', 'Helvetica Neue', 
+        sans-serif;
+    font-style: italic;
+}
+
+
+.project-table__row-td:nth-child(1) {
+    font-size: calc(13px + .4vw);
+    text-align: center;
+}
+.project-table__row-td:nth-child(2) {
+    font-size: calc(12px + .4vw);
+}
+
+/* .project-table__row-td:nth-child(3) {
+    font-size: calc(11px + .5vw);
+    font-family: 'PT Mono', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+
+.project-table__row > * {
+    padding: .2rem .2rem;
+}
+
+.project-table__row-link {
+    text-align: left;
+    font-size: calc(12px + .5vw);
+}
