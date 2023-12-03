@@ -1,0 +1,9 @@
+.project-table__row-link_icon {
+    /* height: 1rem; */
+    height: calc(.5rem + .5vw);
+    width: calc(.5rem + .5vw);
+    /* width: 1rem; */
+    /* float: right; */
+    color: var(--subheader-subheader-color);
+    padding: .1rem .2rem;
+}

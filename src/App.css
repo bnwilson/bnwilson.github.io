@@ -25,8 +25,8 @@
 }
 
 #root {
-  width: 90%;
-  min-width: 18rem;
+  width: 100%;
+  min-width: 18.5rem;
   max-width: 85rem;
   margin: 0 auto;
 }
