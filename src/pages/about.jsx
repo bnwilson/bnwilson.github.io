@@ -26,7 +26,7 @@ function About (props) {
     return (
         <div className="about__content-wrapper">
             {props && props.children}
-            <SectionTitle title={" About Me "} />
+            <SectionTitle title={" About Me "} isSectionHeader />
             {/* <div className="about-me-wrapper">
                 
             </div> */}

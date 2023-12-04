@@ -19,7 +19,7 @@ export const Experience = (props) => {
     return (
         <div className="experience-wrapper">
             {/* Header */}
-            <SectionTitle title="Experiences" />
+            <SectionTitle title="Experiences" isSectionHeader />
             {props.children}
             <div className="experience_tabs">
                 {sectionItems.map((item, index) => (
