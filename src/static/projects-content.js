@@ -23,8 +23,8 @@ module.exports = {
     ],
     projectItems: [
         {
-            title: "Portfolio (Source Code)",
-            info: "Github repo containing the source code for this portfolio page.  " + 
+            title: "Portfolio (project repo)",
+            info: "Github repository containing the source code for this portfolio page.  " + 
                   "The SPA is built & bundled as a static page; configured/hosted via Github Pages.",
             tools: "ReactJS, webpack, babel, Node.js, npm, Github Pages",
             urlLink: "https://github.com/bnwilson/bnwilson.github.io",
@@ -33,18 +33,16 @@ module.exports = {
         },
         {
             title: "BLAillustrations Website",
-            info: "Website for Columbus-artist BLA Illustrations. Store integrates Shopify API and Hydrogen-React library. " +  
-                  "Browse the Gallery for recent artwork, " +
-                  "submit a commission request, drop a line, or purchase BLA original stickers, portraits, decals, and drawings. " +
-                  "Utilizes functions, server-side rendering, and Netlify CMS so the artist can update her content independently.",
-            tools: "ReactJS, Next.js, FaaS, SendGrid (emails), Netlify, NetlifyCMS, reCaptcha, hydrogen-react, chakraUI, Shopify Storefront API, GraphQL",
+            info: "Website for Columbus-artist BLAillustrations. Store integrates Shopify API and Hydrogen-React library. " +  
+                  "Includes a headless-CMS, e-commerce (Shopify), FaaS usage (contact form) - more info can be found on the repo.",
+            tools: "ReactJS, Next.js, NetlifyFaaS, SendGrid (emails), Netlify, NetlifyCMS, reCaptcha, hydrogen-react, chakraUI, Shopify Storefront API, GraphQL",
             urlLink: "https://www.blaillustrations.com",
             urlText: "Website Link",
             sectionId: "react"
         },
         {
-            title: "BLA Illustrations (Source Code)",
-            info: "Github repo containing the source code for the site.  " + 
+            title: "BLAillustrations (project repo)",
+            info: "Github repository containing the source code for the site.  " + 
                   "The repo is set up with webhooks to Netlify's CMS & CI/CD service. " + 
                   "More info can be found in the README.md.",
             tools: "ReactJS, Next.js, FaaS, webhooks, Typescript, SendGrid (emails), NetlifyCMS, reCaptcha (contact form), Shopify Storefront API, GraphQL",
@@ -127,6 +125,14 @@ module.exports = {
             info: "Script which moves my MacOS Desktop screenshots to a screenshot folder.",
             tools: "Python",
             urlLink: "https://github.com/bnwilson/projects/tree/master/move-mac-screenshots",
+            urlText: "Github Link",
+            sectionId: "misc"
+        },
+        {
+            title: "iconify",
+            info: "Converts a given image file to '.ico'",
+            tools: "bash, imagemagick",
+            urlLink: "https://github.com/bnwilson/projects/blob/main/scripts/iconify.sh",
             urlText: "Github Link",
             sectionId: "misc"
         }

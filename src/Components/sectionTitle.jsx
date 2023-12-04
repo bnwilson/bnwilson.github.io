@@ -3,11 +3,14 @@ import React from "react"
 /**
  * 
  * @param {string} title text appearing in the middle of divider line 
+ * @param {boolean} isSectionHeader flag to indicate additional styling for page header
  * @returns 
  */
-export function SectionTitle ({title=""}) {
+export function SectionTitle ({title="", isSectionHeader=false}) {
+    let cssClassName = "main_content__divider_title";
+    cssClassName += isSectionHeader ? " section-header" : "";
 
     return (
-        <div className="main_content__divider_title">{title}</div>
+        <div className={cssClassName}>{title}</div>
     )
 }

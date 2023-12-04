@@ -24,7 +24,7 @@ const Projects = (props) => {
     < div className="main__content-wrapper">
         {props.children}
 
-        <SectionTitle title="Projects" />
+        <SectionTitle title="Projects" isSectionHeader={true}/>
 
         <p className="project-table__caption">
             {ProjectData.projectCaption}

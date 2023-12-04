@@ -1,3 +1,13 @@
+## My Portfolio (Github) Page
+
+As the generated README below states, this project was bootstrapped with `create-react-app` and built as a SPA with `jsx`, `javascript`, `css`, `*.module.css` - nothing too fancy.
+
+The idea was to build a responsive, single-page portfolio app -- with psuedo-navigation functionality -- to display some  foundational knowledge, share my experience / projects, as well has provide a provide a little insight into my personality.
+
+Thanks for taking a look!
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

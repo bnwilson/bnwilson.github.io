@@ -16,7 +16,7 @@ export function formatBodyText (bodyText="", codeContent=[]) {
 
     /* Newlines - replaced '\n' chars with <br> tag */
     const bodyTextSplit = bodyText.split(newlinesRegExp)
-    console.log(`bodyTextSplit.length ==>  ${bodyTextSplit.length}`)
+    // console.log(`bodyTextSplit.length ==>  ${bodyTextSplit.length}`)
     const bodyTextParsed = interleave(bodyTextSplit, <br />)
 
     /* Concat 'codeContent' array-of-string and nest in <code> tag */
