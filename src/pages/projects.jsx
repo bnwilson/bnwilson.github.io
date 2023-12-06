@@ -32,10 +32,10 @@ const Projects = (props) => {
 
         {/* Render out a table +s ection-divider for each unique section ( i.e. -> projectsContent.section[...{}] ) */}
         {projectsContent.projectSections.map((sectionInfo, i) =>
-            <>
+            <div key={i}>
                 <SectionTitle title={sectionInfo.name} />
                 <ProjectsTable {...getSectionRowData(sectionInfo)} />
-            </>
+            </div>
         )}
 
         {/* Giving credit to flaticon author, Dave Gandy */}

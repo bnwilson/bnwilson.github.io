@@ -1,19 +1,20 @@
 import React from "react";
 
 const dividerTypes = {
-    solid: "3px solid #bbb",
-    dotted: "3px dotted #bbb",
-    dashed: "3px dashed #bbb"
+    solid: "1px solid #bbb",
+    dotted: "1px dotted #bbb",
+    dashed: "1px dashed #bbb"
 }
 
-export function Divider (props={dividerType: "solid", dividerCssClass: ""}) {
-    const {dividerType, dividerCssClass} = props;
-    const borderStyleKey = Object.keys(dividerTypes).includes(dividerType) ? dividerType : "solid";
-    const borderStyle = {borderTop: dividerTypes[borderStyleKey]};
+export function Divider (props={dividerType: "solid", dividerCssClass: "", opacity: ""}) {
     
+    const {dividerType="solid", dividerCssClass, opacity="0.4"} = props;
+    const borderStyleKey = Object.keys(dividerTypes).includes(dividerType) ? dividerType : "solid";
+    const borderStyles = {borderTop: dividerTypes[borderStyleKey], opacity: opacity, width: "100%"};
+    console.log(borderStyles)
     return (
         <>
-            <hr style={borderStyle} className={dividerCssClass} />
+            <hr style={{...borderStyles}} className={dividerCssClass} />
         </>
     )
 }

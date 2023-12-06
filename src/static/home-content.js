@@ -23,5 +23,42 @@ export const homeContent = {
             "Python",
             "GraphQL"
         ]
+    },
+    "whatIBring": {
+        "headingText": "What I Bring",
+        // TODO:  convert 'highlight' to 'highlights': [...highlight]
+        "experienceHighlights": [
+            {
+                "years": "8",
+                "highlight": 
+                    "Collective IT: Operations, Infrastructure, & Software Engineering",
+            },
+            {
+                "years": "5",
+                "highlight": 
+                    "Node.js / JavaScript (ES6) development",
+            },
+            {
+                "years": "4",
+                "highlight": 
+                    "Automation technologies: developing, testing, implementing, and supporting ",
+            },
+            {
+                "years": "3",
+                "highlight": 
+                    "Using DevOps & cloud platforms like Jenkins, EC2, s3, " + 
+                    "Gitlab, Docker, and Kubernetes"
+            },
+            {
+                "years": "2",
+                "highlight": 
+                    "Writing python and bash scripts to accomplish various automated tasks"
+            },
+            {
+                "years": "1",
+                "highlight":
+                    "Utilizing front-end frameworks & languages like ReactJS, JQuery, Django"
+            }
+        ]
     }
 }
