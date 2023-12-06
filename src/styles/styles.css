@@ -1,15 +1,21 @@
 /* Main - navbar styling */
 .main_navbar {
+    background-color: var(--off-white-2);
+    border-bottom: 1px outset var(--box-shadow);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-grow: 1 2;
+    justify-content: space-between;
     min-width: 95%;
     max-width: 100vw;
     margin: 0;
     padding: .05rem 0.1rem;
-
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+    
 }
+
 /* Title & Subtitle container */
 .main_navbar__title_box {
     display: flex;

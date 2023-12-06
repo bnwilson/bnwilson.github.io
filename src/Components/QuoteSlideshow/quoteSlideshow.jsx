@@ -28,7 +28,6 @@ export function QuoteSlideshow (props={quotes: [{author:"", quote:""}],customDel
         resetTimeout();
         timeoutRef.current = setTimeout(() => {
             setCurrentSlide(prevSlide => {
-                console.log(`currentSlide => ${prevSlide}`)
                 return prevSlide + 1 === quotes.length ? 0 : prevSlide + 1
             })
 

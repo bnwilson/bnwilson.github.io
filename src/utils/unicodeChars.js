@@ -6,5 +6,8 @@ export const unicodeChars = {
     threeStar: "\u{2042}",
     astrisk: "\u{2055}",
     largeX: "\u{2573}",
-    recycle: "\u{267B}"
+    recycle: "\u{267B}",
+    checkMark: "\u{2713}",
+    checkMarkHeavy: "\u{2714}",
+    checkMarkBox: "\u{2705}"
 }
