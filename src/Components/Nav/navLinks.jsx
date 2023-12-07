@@ -17,7 +17,7 @@ export function NavLinks ({onclick}) {
      */
     const handleResponsiveMenuClick = () => {
         const navElement = document.querySelector('.main_navbar .main_navbar__navmenu')
-        console.log(`Is responsive ---->    ${!isNavMenuExpanded}`)
+        // console.log(`Is responsive ---->    ${!isNavMenuExpanded}`)
         navElement.classList.toggle("responsive")
         setIsNavMenuExpanded(!isNavMenuExpanded);
     }
@@ -25,10 +25,10 @@ export function NavLinks ({onclick}) {
     return (
         <div className="main_navbar__navmenu" >
             {!isNavMenuExpanded ? 
-                <span className="material-symbols-outlined nav_icon" onClick={handleResponsiveMenuClick} >
+                <span className="nav_icon material-symbols-outlined " onClick={handleResponsiveMenuClick} >
                     menu
                 </span> :
-                <span className="material-symbols-outlined nav_icon" onClick={handleResponsiveMenuClick} >
+                <span className="nav_icon material-symbols-outlined " onClick={handleResponsiveMenuClick} >
                     close
                 </span>
             }

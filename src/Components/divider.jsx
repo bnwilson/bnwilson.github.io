@@ -11,7 +11,7 @@ export function Divider (props={dividerType: "solid", dividerCssClass: "", opaci
     const {dividerType="solid", dividerCssClass, opacity="0.4"} = props;
     const borderStyleKey = Object.keys(dividerTypes).includes(dividerType) ? dividerType : "solid";
     const borderStyles = {borderTop: dividerTypes[borderStyleKey], opacity: opacity, width: "100%"};
-    console.log(borderStyles)
+    
     return (
         <>
             <hr style={{...borderStyles}} className={dividerCssClass} />

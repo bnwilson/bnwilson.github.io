@@ -7,6 +7,7 @@ export function WelcomeBanner ({welcomeText={headingText:"", bodyText:"", codeCo
     const heading = welcomeText.headingText || "Welcome to { error:  'No heading text arg passed, you crazy dev.' }";
     const body = welcomeText.bodyText || "{ error:  'Missing riveting, tear-inducing, rollercoaster-of-emotion content' }";
     const bodyContent = formatBodyText(body, welcomeText.codeContent)
+    
     return (
         <article className="home_content__welcome" >
             <SelfPortrait imgClassName="home_content__portrait" />
