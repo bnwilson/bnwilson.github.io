@@ -16,13 +16,12 @@ export function formatBodyText (bodyText="", codeContent=[]) {
 
     /* Newlines - replaced '\n' chars with <br> tag */
     const bodyTextSplit = bodyText.split(newlinesRegExp)
-    // console.log(`bodyTextSplit.length ==>  ${bodyTextSplit.length}`)
-    const bodyTextParsed = interleave(bodyTextSplit, <br />)
+    const bodyTextParsed = interleave(bodyTextSplit, "br")
 
     /* Concat 'codeContent' array-of-string and nest in <code> tag */
     const codeContentParsed = codeContent.join(" \u{000B7} ")
     // const codeContentParsed = codeContent.join(" \u{0D66} ")
-    const codeContentWrapped = <code>{codeContentParsed}</code> 
+    const codeContentWrapped = <code key={bodyTextParsed.length}>{codeContentParsed}</code> 
     bodyTextParsed.forEach(bodyTextItem => {
         // console.log(`value:  ${bodyTextItem}`, typeof bodyTextItem, )
 
@@ -50,4 +49,6 @@ export function formatBodyText (bodyText="", codeContent=[]) {
  * @param {any} newItem Value of `any` type to be inserted between existing elements
  * @returns {Array} New, modified `arr` Array
  */
-export const interleave = (arr, newItem) => [].concat(...arr.map(n=> [n, newItem])).slice(0, -1)
+export const interleave = (arr, newItem='br') => {
+    return [].concat(...arr.map((n, i) => [n, newItem === 'br' ? <br key={i}/> : newItem])).slice(0, -1);
+}

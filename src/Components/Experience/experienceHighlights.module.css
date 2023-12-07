@@ -35,7 +35,7 @@
 @media screen and (max-width: 525px) {
     .xp-container {
         width: auto;
-        padding: .15rem 1rem 0;
+        /* padding: .15rem 1rem 0; */
     }
     
     .xp-item__heading {
@@ -43,15 +43,17 @@
         width: 100%;
         text-align: center;
         margin: .25rem .1rem .1rem;
-        padding-inline-start: 0.5rem;
+        padding-inline-start: 0.25rem;
         
     }
     .xp-item__highlight {
         /* width: 100%; */
         word-break: normal;
-        /* padding: 0 1rem; */
+        padding: 0 1rem;
         padding-inline-start: 0;
         text-align: center;
+        font-size: .8em;
+        line-height: 1.15rem;
     }
     
 }
