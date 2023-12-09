@@ -50,6 +50,13 @@ jobs:
         run: npm run build
         env:
           CI: "" # process.env.CI = false
+          REACT_APP_CONTACT_LINKEDIN: ${{secrets.REACT_APP_CONTACT_LINKEDIN}}
+          REACT_APP_CONTACT_DISCORD: ${{secrets.REACT_APP_CONTACT_DISCORD}}
+          REACT_APP_CONTACT_EMAIL: ${{secrets.REACT_APP_CONTACT_EMAIL}}
+          REACT_APP_CONTACT_GMAIL: ${{secrets.REACT_APP_CONTACT_GMAIL}}
+          # public env variables  
+          #  REACT_APP_GITHUB_PROFILE_URL
+          #  REACT_APP_GITHUB_PORTFOLIO_URL
       # Upload build as artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2

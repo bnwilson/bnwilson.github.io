@@ -24,8 +24,8 @@ module.exports = {
     projectItems: [
         {
             title: "Portfolio (project repo)",
-            info: "Github repository containing the source code for this portfolio page.  " + 
-                  "The SPA is built & bundled as a static page; configured/hosted via Github Pages.",
+            info: "Source code for this portfolio page. " + 
+                  "The SPA is built & bundled as a static page; CI with Github Pages/Actions.",
             tools: "ReactJS, webpack, babel, Node.js, npm, Github Pages",
             urlLink: "https://github.com/bnwilson/bnwilson.github.io",
             urlText: "Github Link",
@@ -33,9 +33,9 @@ module.exports = {
         },
         {
             title: "BLAillustrations Website",
-            info: "Website for Columbus-artist BLAillustrations. Store integrates Shopify API and Hydrogen-React library. " +  
-                  "Includes a headless-CMS, e-commerce (Shopify), FaaS usage (contact form) - more info can be found on the repo.",
-            tools: "ReactJS, Next.js, NetlifyFaaS, SendGrid (emails), Netlify, NetlifyCMS, reCaptcha, hydrogen-react, chakraUI, Shopify Storefront API, GraphQL",
+            info: "Website for artist BLAillustrations. E-commerce w/ Shopify API. " +  
+                  "Also features: headless-CMS, FaaS usage (contact form) - more info can be found on the repo.",
+            tools: "ReactJS, Next.js, NetlifyFaaS, SendGrid (emails), Netlify, GraphQL, reCaptcha, hydrogen-react, chakraUI",
             urlLink: "https://www.blaillustrations.com",
             urlText: "Website Link",
             sectionId: "react"
@@ -60,9 +60,8 @@ module.exports = {
         },
         {
             title: "D&D Character Creator (Frontend)",
-            info: `Interactive Dungeons and Dragons\u00A9 character creator, choose your character Name, Race,` +
-                  "Class, Alignment, and input your attributes and the app will calculate your stats," +
-                  "bonus attributes, and stats!.",
+            info: `Interactive Dungeons and Dragons\u00A9 character creator. choose your character Name, Race,` +
+                  "Class, Alignment, Attributes and the app will do the rest!",
             tools: "ReactJS Create React App, Javascript, html/css3, css grid/flex, fetch, Jest (testing)",
             urlLink: "https://github.com/DnDnU/dnd-character-sheet-frontend",
             urlText: "Github Link",
