@@ -1,6 +1,6 @@
 /* Main - navbar styling */
 .main_navbar {
-    background-color: var(--off-white-2);
+    background-color: var(--bright-white-2);
     border-bottom: 1px outset var(--box-shadow);
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@
     padding: .05rem 0.1rem;
     position: sticky;
     top: 0px;
-    z-index: 20;
+    z-index: 30;
     
 }
 
@@ -46,7 +46,7 @@
 }
 
 .main_navbar__navmenu {
-    overflow:visible;
+    vertical-align: middle;
     /* flex-grow: 2; */
 }
 
@@ -114,7 +114,6 @@
         margin: .25rem .35rem .1rem 0;
         padding: .15rem;
         font-size: 1.5rem;
-        z-index: 5;
     }
     .main_navbar__navmenu .nav_icon:hover {
         cursor: pointer;

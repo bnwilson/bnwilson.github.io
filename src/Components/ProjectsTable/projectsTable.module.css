@@ -83,7 +83,7 @@
 
 #col__desc {
     font-family: 'News Cycle', sans-serif;
-    font-size: calc(10px + 0.5vw);
+    font-size: calc(11px + 0.5vw);
 }
 
 #col__tools {
@@ -97,14 +97,18 @@
     font-style: italic;
 }
 
+#col__link {
+    font-size: calc(12px + 0.4vw);
+}
 
-.project-table__row-td:nth-child(1) {
+
+/* .project-table__row-td:nth-child(1) {
     font-size: calc(13px + .4vw);
     text-align: center;
 }
 .project-table__row-td:nth-child(2) {
     font-size: calc(12px + .4vw);
-}
+} */
 
 /* .project-table__row-td:nth-child(3) {
     font-size: calc(11px + .5vw);
@@ -118,4 +122,35 @@
 .project-table__row-link {
     text-align: left;
     font-size: calc(12px + .5vw);
+}
+
+@media screen and (max-width: 500px) {
+    .projects-table__th {
+        
+        text-align: center;
+        padding: .25rem .2rem;
+    }
+    #col__name {
+        font-weight: 600;
+        padding: 0 .25px;
+        text-align: center;
+    }
+    
+    #col__desc {
+        text-align: center;
+    }
+    
+    #col__tools {
+        text-align: center;
+    }
+    
+    #col__link {
+        text-align: center;
+        
+    }
+    #col__link a{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
