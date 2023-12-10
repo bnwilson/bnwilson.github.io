@@ -19,13 +19,12 @@
     margin: .25rem .25rem 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact-item__email-hidden-tooltip {
     position: relative;
-    /* offset-anchor: 5; */
     margin: 0 .25rem;
-    /* display: block; */
     color: red;  
     visibility: hidden;
 }
