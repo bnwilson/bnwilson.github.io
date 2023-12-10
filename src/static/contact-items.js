@@ -1,5 +1,5 @@
 export const contactItems = {
-    gmailContact: process.env.REACT_APP_CONTACT_GMAIL || "",
+    gmailContact: process.env.REACT_APP_CONTACT_GMAIL_TXT || "",
     contactLinks: [
         {
             href: process.env.REACT_APP_CONTACT_LINKEDIN || "",
