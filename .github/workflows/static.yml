@@ -54,6 +54,7 @@ jobs:
           REACT_APP_CONTACT_DISCORD: ${{secrets.REACT_APP_CONTACT_DISCORD}}
           REACT_APP_CONTACT_EMAIL: ${{secrets.REACT_APP_CONTACT_EMAIL}}
           REACT_APP_CONTACT_GMAIL: ${{secrets.REACT_APP_CONTACT_GMAIL}}
+          REACT_APP_CONTACT_GMAIL_TXT: ${{secrets.REACT_APP_CONTACT_GMAIL_TXT}}
           # public env variables  
           #  REACT_APP_GITHUB_PROFILE_URL
           #  REACT_APP_GITHUB_PORTFOLIO_URL
