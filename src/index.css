@@ -51,7 +51,8 @@ html {
 }
 
 body {
-  background-color: var(--off-white-1);
+  /* background-color: var(--off-white-1); */
+  background-color: var(--bright-white-2);
   margin: 0;
   font-family: "News Cycle", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

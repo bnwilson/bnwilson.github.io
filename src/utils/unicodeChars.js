@@ -9,5 +9,8 @@ export const unicodeChars = {
     recycle: "\u{267B}",
     checkMark: "\u{2713}",
     checkMarkHeavy: "\u{2714}",
-    checkMarkBox: "\u{2705}"
+    checkMarkBox: "\u{2705}",
+    sunWithRays: "\u{263C}",
+    moonFirstQuarter: "\u{263D}",
+    moonLastQuarter: "\u{263E}"
 }

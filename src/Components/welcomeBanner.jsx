@@ -10,7 +10,7 @@ export function WelcomeBanner ({welcomeText={headingText:"", bodyText:"", codeCo
     
     return (
         <article className="home_content__welcome" >
-            <SelfPortrait imgClassName="home_content__portrait" />
+            <SelfPortrait wrapperClassName="home_content__img_wrapper" imgClassName="home_content__portrait" />
             <h2 className="home_content__welcome_heading">{heading}</h2>
             <p className="home_content__welcome_body">{bodyContent.map(c=>c)}</p>
             {/* <article>

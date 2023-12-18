@@ -1,0 +1,33 @@
+.toggle-switch {
+    background-color: gray;
+    border-radius: 1rem;
+    width: 1.9rem;
+    height: 1rem;
+}
+
+.toggle-switch:hover {
+    cursor: pointer;
+}
+
+.toggle-switch::before {
+    display: block;
+    height: .7rem;
+    width: .7rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    transition: all ease 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.toggle-switch.off::before {
+    right: 18px;
+}
+
+.toggle-switch__label {
+    text-transform: uppercase;
+}
