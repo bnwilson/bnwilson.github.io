@@ -356,6 +356,14 @@
 
 .navbar_list-item {
     padding: 0 5px;
-    
+}
+
+/* Small-footprint credit to icon creator(s) */
+.icon-credit {
+    font-size: 10px;
+    color: rgba(36, 30, 121, 0.5);
+    margin: 0 auto;
+    text-align: left;
+    padding-inline-start: 5px;
 }
 

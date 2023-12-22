@@ -6,11 +6,14 @@ const dividerTypes = {
     dashed: "1px dashed #bbb"
 }
 
-export function Divider (props={dividerType: "solid", dividerCssClass: "", opacity: ""}) {
+export function Divider (
+    props={dividerType: "solid", dividerCssClass: "", opacity: "", width: "100%", orient: "top"}) {
     
-    const {dividerType="solid", dividerCssClass, opacity="0.4"} = props;
+    const {dividerType="solid", dividerCssClass, opacity="0.4", width="100%", orient="top"} = props;
     const borderStyleKey = Object.keys(dividerTypes).includes(dividerType) ? dividerType : "solid";
-    const borderStyles = {borderTop: dividerTypes[borderStyleKey], opacity: opacity, width: "100%"};
+    const borderOrientationKey = orient === "top"? "borderTop" : "borderBottom";
+    const borderStyles = {opacity: opacity, width: width};
+    borderStyles[borderOrientationKey] = dividerTypes[borderStyleKey];
     
     return (
         <>

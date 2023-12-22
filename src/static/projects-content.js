@@ -21,6 +21,99 @@ module.exports = {
             caption: "Miscellaneous apps, scripts, coding challenge"
         }
     ],
+    projectStories: [
+        {
+            title: "BLAillustrations",
+            description: "Website for artist BLAillustrations. E-commerce w/ Shopify API. " +  
+                         "Also features: headless-CMS, FaaS usage (contact form) - more info can be found on the repo.",
+            tags: ["React", "NextJS", "NetlifyCMS", "Shopify", "GraphQL", "e-commerce", "typescript"],
+            imgFile: "BLAillustrations_site_snapshot.jpg",
+            links: [
+                {
+                    urlLink: "https://www.blaillustrations.com",
+                    urlText: "Website Link"
+                },
+                {
+                    urlLink: "https://github.com/bnwilson/blaillustrations",
+                    urlText: "Github Link"
+                }
+            ],
+            storySections: [
+                {
+                    sectionTitle: "Gallery",
+                    sectionDescription: "Features a headless-CMS, an admin panel for uploading content, " +
+                                        "and dynamic loading of markdown content. Gallery item(s) are " + 
+                                        "rendered into a responsive grid and - upon a user click/touch - will " + 
+                                        "pop up in a modal slideshow.",
+                    tools: ["NetlifyCMS", "NetlifyFaaS", "server-side rendering", "Github webhooks"],
+                    
+                },
+                {
+                    sectionTitle: "Store",
+                    sectionDescription: "Shopify store integration.  Cart context and store content are (independently) " +
+                                        "fetched, redendered, and tracked.  Uses a variety of both custom and HydrogenJS-provided " + 
+                                        "solutions, such as:  components, hooks, and context",
+                    tools: ["graphQLClient", "shopifyStorefrontApi", "SSR", "hydrogen-react", "GraphQL", "chakra-ui"]
+                },
+                {
+                    sectionTitle: "Contact",
+                    sectionDescription: "A contact form using 'yup' for input validation and 'react-hook-form' for " + 
+                                        "state management. Submission is locked behind the validation and a reCaptcha " + 
+                                        "element.  Successful submission triggers a serverless function that generates " +
+                                        "the formatted html/text body and issues a request to Sendgrid API.",
+                    tools: ["react-hook-form.js", "yup.js", "reCAPTCHA", "Sendgrid", "Netlify FaaS"]
+                }
+            ]
+        },
+        {
+            title: "'D&D&U':  D&D character-creator",
+            description: `Interactive Dungeons and Dragons\u00A9 character creator. The app will guide you through ` + 
+                         ` your character's --> Name, Race, ` +
+                         "Class, Alignment, Attributes and the app will do the rest!",
+            tags: ["ReactJS", "Javascript", "html5/css3", "dnd5eapi", "Jest"],
+            imgFile: "DnDnU_project_preview.jpg",
+            links: [
+                {
+                    urlLink: "https://github.com/DnDnU/dnd-character-sheet-frontend",
+                    urlText: "Frontend (source)"
+                },
+                {
+                    urlLink: "https://github.com/DnDnU/dnd-character-sheet-backend",
+                    urlText: "Backend (source)"
+                }
+            ],
+            storySections: [
+                {
+                    sectionTitle: "Frontend",
+                    sectionDescription: `Interactive Dungeons and Dragons\u00A9 character creator. Choose your character Name, Race,` +
+                          "Class, Alignment, Attributes and the app will do the rest!",
+                    tools: ["ReactJS Create React App", "Javascript", "html/css3", "fetch", "Jest (testing)"]
+                },
+                {
+                    title: "D&D Character Creater (Backend)",
+                    sectionDescription: "API-layer for D&D, utilizes dnd5eapi.co to access up-to-date race and " +
+                          "class data. Also handles the dice rolls for stats (6x d6 rolls and returns highest 3 values).",
+                    tools: ["ExpressJS", "node-fetch", "jest", "dnd5eapi.co (3rd-party API)"]
+                }
+            ]
+        },
+        {
+            title: "Blackjack",
+            description: "Just a simple game of Blackjack, starting with 300 chips. Playable as a Github Pages app.",
+            tags: ["Vanilla JS", "html/css", "webpack", "Github pages"],
+            imgFile: "blackjack_project_preview.jpg",
+            links: [
+                {
+                    urlLink: "https://bnwilson.github.io/blackjack-blackjack",
+                    urlText: "Play Now!"
+                },
+                {
+                    urlLink: "https://github.com/bnwilson/blackjack-blackjack",
+                    urlText: "Github Link"
+                }
+            ]
+        }
+    ],
     projectItems: [
         {
             title: "Portfolio (project repo)",
@@ -38,7 +131,7 @@ module.exports = {
             tools: "ReactJS, Next.js, NetlifyFaaS, SendGrid (emails), Netlify, GraphQL, reCaptcha, hydrogen-react, chakraUI",
             urlLink: "https://www.blaillustrations.com",
             urlText: "Website Link",
-            sectionId: "react"
+            sectionId: "N/A"
         },
         {
             title: "BLAillustrations (project repo)",
@@ -48,7 +141,7 @@ module.exports = {
             tools: "ReactJS, Next.js, FaaS, webhooks, Typescript, SendGrid (emails), NetlifyCMS, reCaptcha (contact form), Shopify Storefront API, GraphQL",
             urlLink: "https://github.com/bnwilson/blaillustrations",
             urlText: "Github Link",
-            sectionId: "react"
+            sectionId: "N/A"
         },
         {
             title: "Projects",
@@ -59,13 +152,21 @@ module.exports = {
             sectionId: "misc"
         },
         {
+            title: "Katas",
+            info: "Coding prompts, challenges, and 'just because' ideas",
+            tools: "javascript",
+            urlLink: "https://github.com/bnwilson/projects/katas",
+            urlText: "Github Link",
+            sectionId: "misc"
+        },
+        {
             title: "D&D Character Creator (Frontend)",
             info: `Interactive Dungeons and Dragons\u00A9 character creator. choose your character Name, Race,` +
                   "Class, Alignment, Attributes and the app will do the rest!",
             tools: "ReactJS Create React App, Javascript, html/css3, css grid/flex, fetch, Jest (testing)",
             urlLink: "https://github.com/DnDnU/dnd-character-sheet-frontend",
             urlText: "Github Link",
-            sectionId: "react"
+            sectionId: "N/A"
         },
         {
             title: "D&D Character Creater (Backend)",
@@ -74,9 +175,9 @@ module.exports = {
             tools: "NodeJS, ExpressJS, node-fetch, jest, dnd5eapi.co (3rd-party API)",
             urlLink: "https://github.com/DnDnU/dnd-character-sheet-backend",
             urlText: "Github Link",
-            sectionId: "react"
+            sectionId: "N/A"
         },
-
+    /* TODO:  dead link, found the local file and will upload next PR
         {
             title: "Blog site",
             info: "Create a user, choose your avatar, create and view yours and others' posts. " + 
@@ -86,13 +187,14 @@ module.exports = {
             urlText: "Github Link",
             sectionId: "nodejs"
         },
+    */
         {
             title: "Blackjack",
             info: "Just a simple game of Blackjack, starting with 300 chips. Playable on Github Pages (link to the right).",
             tools: "Vanilla JS, html/css, webpack, Github pages",
             urlLink: "https://bnwilson.github.io/blackjack-blackjack",
             urlText: "Play Now!",
-            sectionId: "nodejs"
+            sectionId: "N/A"
         },
         {
             title: "Highstreet Hospital",
