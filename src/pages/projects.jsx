@@ -3,12 +3,13 @@ import '../styles/styles.css';
 import '../styles/project.css';
 import { SectionTitle } from '../Components/sectionTitle';
 import { ProjectsTable } from '../Components/ProjectsTable/projectsTable';
+import { StoryCard } from '../Components/ProjectsStory'
 
 const ProjectData = require('../static/project-data');
 const projectsContent = require('../static/projects-content');
 
 const Projects = (props) => {
-
+    const storyCardTest = projectsContent.projectStories[1]
     /* Build props for ProjectsTable | filter relevant 'projectsContent' info by section id */
     const getSectionRowData = (section={id:"", name:"", caption:""}) => {
         const headers = projectsContent.projectHeaders
@@ -25,10 +26,16 @@ const Projects = (props) => {
         {props.children}
 
         <SectionTitle title="Projects" isSectionHeader={true}/>
-
         <p className="project-table__caption">
             {ProjectData.projectCaption}
         </p>
+        {projectsContent.projectStories.map((story, i) =>
+            <StoryCard key={i} {...story} ></StoryCard>
+        )}
+        {/* <StoryCard {...storyCardTest} >
+            children: ...<sections>, ...<links>
+        </StoryCard> */}
+
 
         {/* Render out a table +s ection-divider for each unique section ( i.e. -> projectsContent.section[...{}] ) */}
         {projectsContent.projectSections.map((sectionInfo, i) =>

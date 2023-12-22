@@ -95,12 +95,6 @@
     padding: .1rem .2rem;
 }
 
-.icon-credit {
-    font-size: calc(9px + .5vw);
-    color: rgba(36, 30, 121, 0.5);
-    margin: 0 auto;
-    text-align: center;
-}
 
 /* .project-table__body {
 
