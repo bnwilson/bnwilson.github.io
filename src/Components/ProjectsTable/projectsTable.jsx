@@ -52,7 +52,7 @@ export function ProjectsTable ({id="", name="", caption="", headers=[], rows=[]}
                         <td className={styles['project-table__row-td']} id={styles.col__desc}>{row && row.info}</td>
                         <td className={styles['project-table__row-td']} id={styles.col__tools} >{row && row.tools}</td>
                         <td className={styles['project-table__row-td']} id={styles.col__link}>
-                            <ExternalLink urlHref={row.urlLink} urlText={row.urlText} />
+                            <ExternalLink urlHref={row.urlLink} urlText={row.urlText} isButton={true} />
                         </td>
                     </tr>
                     )

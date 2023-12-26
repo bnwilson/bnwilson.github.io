@@ -70,7 +70,7 @@ module.exports = {
             description: `Interactive Dungeons and Dragons\u00A9 character creator. The app will guide you through ` + 
                          ` your character's --> Name, Race, ` +
                          "Class, Alignment, Attributes and the app will do the rest!",
-            tags: ["ReactJS", "Javascript", "html5/css3", "dnd5eapi", "Jest"],
+            tags: ["ReactJS", "Javascript", "html5/css3", "dnd5eapi", "Jest", "Express.js"],
             imgFile: "DnDnU_project_preview.jpg",
             links: [
                 {
@@ -99,7 +99,8 @@ module.exports = {
         },
         {
             title: "Blackjack",
-            description: "Just a simple game of Blackjack, starting with 300 chips. Playable as a Github Pages app.",
+            description: "Just a simple game of Blackjack, starting with 300 chips. Playable as a Github Pages app." + 
+                         " Fair warning:  the dealer is a little snarky.",
             tags: ["Vanilla JS", "html/css", "webpack", "Github pages"],
             imgFile: "blackjack_project_preview.jpg",
             links: [
