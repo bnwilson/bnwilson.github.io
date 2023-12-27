@@ -27,6 +27,6 @@
 #root {
   /* width: 100%; */
   min-width: 350px;
-  /* max-width: 90rem; */
+  max-width: 2000px;
   margin: 0 auto;
 }

@@ -10,9 +10,11 @@ export function StoryCard ({title="", description="", tags=[], imgFile="", links
     return (    
         <div className={styles.wrapper} >
             <h1 className={`${styles.title} ${styles.title__project}`}>{title}</h1>
-            <Divider width="100%" orient="bottom"  />
+            {/* <Divider width="100%" orient="bottom"  /> */}
             <div className={styles['info-container']} >
-                <img className={styles.preview} alt={title} src={imgFile} />
+                <div className={styles.preview_wrapper} >
+                    <img className={styles.preview} alt={title} src={imgFile} />
+                </div>
                 <div className={styles.summary_wrapper} >
 
                     {/*  'Tools Used'  */}
@@ -22,6 +24,7 @@ export function StoryCard ({title="", description="", tags=[], imgFile="", links
                                 {tags.map((t,i) => <Label key={i} text={t} variant={"status"} />)}
                             </Labels>
                     </section>
+                    {/* <Divider width="95%" orient="top" /> */}
 
                     {/*   'Overview'    */}
                     {/* <Divider width="90%" orient="top"  /> */}
