@@ -4,14 +4,16 @@ import styles from "./label.module.css";
 const labelVariantIds = {
     code:   styles['code_variant'],
     tag:    styles['tag_variant'],
-    status: ""
+    status: "",
+    hash:   styles['hash_variant'],
+    lightweight: styles['lightweight_variant'],
 }
 
 /**
  * 
- * @param {string|undefined} text 
- * @param {"code"|"tag"|"status"|undefined} variant
- * @returns 
+ * @param {{text: string|undefined, variant: "code"|"tag"|"status"|undefined}} props 
+ * @arg {"code"|"tag"|"status"|undefined} variant
+ * @returns {ReactNode}
  */
 export function Label ({text="", variant="status"}) {
     const variantId = (variant && Object.keys(labelVariantIds).includes(variant)) 

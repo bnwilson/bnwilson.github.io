@@ -51,7 +51,7 @@ module.exports = {
                 {
                     sectionTitle: "Store",
                     sectionDescription: "Shopify store integration.  Cart context and store content are (independently) " +
-                                        "fetched, redendered, and tracked.  Uses a variety of both custom and HydrogenJS-provided " + 
+                                        "fetched, rendered, and tracked.  Uses a variety of both custom and HydrogenJS-provided " + 
                                         "solutions, such as:  components, hooks, and context",
                     tools: ["graphQLClient", "shopifyStorefrontApi", "SSR", "hydrogen-react", "GraphQL", "chakra-ui"]
                 },
@@ -85,14 +85,15 @@ module.exports = {
             storySections: [
                 {
                     sectionTitle: "Frontend",
-                    sectionDescription: `Interactive Dungeons and Dragons\u00A9 character creator. Choose your character Name, Race,` +
-                          "Class, Alignment, Attributes and the app will do the rest!",
-                    tools: ["ReactJS Create React App", "Javascript", "html/css3", "fetch", "Jest (testing)"]
+                    sectionDescription: "Presentation-layer of the app.  Holds state for the sessions and applies " + 
+                                        "rules and business logic throughout the app.  Dice rolls and real-time D&D\u00A9" +
+                                        " data obtained through fetch and backend.",
+                    tools: ["ReactJS", "Javascript", "html/css3", "fetch", "Jest (testing)"]
                 },
                 {
-                    title: "D&D Character Creater (Backend)",
-                    sectionDescription: "API-layer for D&D, utilizes dnd5eapi.co to access up-to-date race and " +
-                          "class data. Also handles the dice rolls for stats (6x d6 rolls and returns highest 3 values).",
+                    sectionTitle: "Backend",
+                    sectionDescription: "API-layer, utilizes dnd5eapi.co to access up-to-date race and " +
+                          "class data. Also provides a service for dice rolls when rolling character attributes.",
                     tools: ["ExpressJS", "node-fetch", "jest", "dnd5eapi.co (3rd-party API)"]
                 }
             ]

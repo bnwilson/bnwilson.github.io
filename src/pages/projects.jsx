@@ -3,7 +3,7 @@ import '../styles/styles.css';
 import '../styles/project.css';
 import { SectionTitle } from '../Components/sectionTitle';
 import { ProjectsTable } from '../Components/ProjectsTable/projectsTable';
-import { StoryCard } from '../Components/ProjectsStory'
+import { StoryCard, StorySections } from '../Components/ProjectsStory'
 
 const ProjectData = require('../static/project-data');
 const projectsContent = require('../static/projects-content');
@@ -30,7 +30,9 @@ const Projects = (props) => {
             {ProjectData.projectCaption}
         </p>
         {projectsContent.projectStories.map((story, i) =>
-            <StoryCard key={i} {...story} ></StoryCard>
+            <StoryCard key={i} {...story} >
+                <StorySections sections={story.storySections} />
+            </StoryCard>
         )}
         {/* <StoryCard {...storyCardTest} >
             children: ...<sections>, ...<links>
