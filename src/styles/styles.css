@@ -109,6 +109,7 @@
         display: none;
     }
     .main_navbar__navmenu .nav_icon {
+        background-color: var(--bright-white);
         color: var(--header-color);
         position: absolute;
         display: block;

@@ -6,6 +6,7 @@
     max-width: 100%;
     overflow: auto hidden;
     overflow-wrap: normal;
+    /* box-shadow: 3px 2px 5px rgba(133, 133, 133, 0.5); */
 }
 
 .projects-table__container>table {
@@ -14,7 +15,6 @@
     display: block;
     max-width: 100%;
     margin: 0 auto;
-    /* box-shadow: 3px 2px 5px rgba(133, 133, 133, 0.5); */
 }
 
 /* Caption */
@@ -84,6 +84,7 @@
 #col__desc {
     font-family: 'News Cycle', sans-serif;
     font-size: calc(12px + 0.5vw);
+    padding: 0 .25rem;
 }
 
 #col__tools {
@@ -98,7 +99,8 @@
 }
 
 #col__link {
-    font-size: calc(12px + 1vw);
+    /* font-size: calc(10px + 1vw); */
+    font-size: inherit;
 }
 
 
@@ -168,7 +170,6 @@
         text-align: center;
         font-size: medium;
         line-break: strict;
-        
     }
     
     #col__tools {
@@ -183,7 +184,7 @@
     }
     #col__link a{
         display: flex;
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
         align-items: center;
     }
 }

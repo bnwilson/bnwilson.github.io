@@ -33,6 +33,7 @@
     text-decoration-line: none;
     text-wrap: nowrap;
     vertical-align: middle; 
+    color: rgba(246, 245, 240, 0.834);
     
 }
 
@@ -58,13 +59,12 @@
 }
 
 .button::first-line {
-    color: rgb(188, 220, 173);
     /* text-shadow: 2px 2px 15px rgba(242, 249, 243, 0.886); */
     text-wrap: nowrap;
 }
 
-.button::first-line:after {
+/* .button::first-line:after {
     content: "\0020";
     margin: 4px;
     
-}
+} */
